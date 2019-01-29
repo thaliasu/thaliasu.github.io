@@ -1,0 +1,397 @@
+/*GLOBAL*/
+body {
+	background-color: #BF91C4;
+	font-family: Montserrat, sans-serif;
+	color: #FFF;
+}
+
+.bold, h2 {
+	font-weight: bold;
+}
+
+a {
+	color: #FFF;
+}
+
+a:hover {
+	color: #BF91C4;
+}
+
+h2 {
+	font-size: 60px;
+}
+
+button:hover {
+	color: #310f31 !important;
+}
+
+i{
+	/*Semantic UI has no white color class*/
+	color: #FFF;
+}
+
+.right {
+	/*global right float*/
+	float: right;
+}
+/*END GLOBAL*/
+
+/*NAV*/
+#nav-icon:hover, #scroll-icon:hover {
+	color: #310F31;
+}
+
+.my-nav {
+	padding: 20px;
+}
+
+nav {
+	height: 12%;
+}
+/*END NAV*/
+
+/*Sidebar section overrides Semantic CSS*/
+.sidebar {
+	background-color: #BF91C4 !important;
+	font-family: Montserrat, sans-serif !important;
+	font-size: 30px !important;
+	width: 50% !important;
+	z-index: 100000 !important;
+}
+
+/*.ui.visible.uncover.sidebar {
+	Line 37595 in semantic.css
+	Not working
+	-webkit-transition: -webkit-transform 12000ms ease !important;
+	transition: -webkit-transform 12000ms ease !important;
+	transition: transform 12000ms ease !important;
+	transition: transform 12000ms ease, -webkit-transform 12000ms ease !important;
+}*/
+
+.menu .item {
+	color: #FFF !important;
+	border-bottom: none !important;
+}
+
+.menu .item:before {
+  background: rgba(34, 36, 38, 0) !important;
+}
+
+/*Unable to reset body.pushable from styles.css. See line 37203 in semantic.css, which has been commented out.
+body.pushable {
+  background: #545454 !important;
+}*/
+
+.menu .item:hover {
+	background: rgba(34, 36, 38, 0.2);
+}
+/*END SIDEBAR OVERRIDE*/
+
+/*TS ANIMATION & SCROLL DOWN*/
+.morph {
+	stroke: #FFFFFF;
+	stroke-width: 5;
+	fill: #BF91C4;
+}
+
+.wrapper {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+}
+
+@media only screen and (max-height: 415px) {
+	.wrapper {
+		top: 65%;
+		width: 45%;
+	}
+}
+
+#scroll-down {
+	margin-top: 20px;
+}
+
+@media only screen and (orientation: landscape) {
+	#scroll-down {
+		margin-top: 0px;
+	}
+}
+/*END TS ANIMATION & SCROLL DOWN*/
+
+/*BELOW SPLASH PAGE
+INTRO SECTION*/
+
+#intro {
+	font-size: 55px;
+}
+
+@media only screen and (max-width: 1199px) {
+	#intro {
+		font-size: 45px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	#intro {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#intro {
+		font-size: 40px;
+		text-align: center;
+	}
+	#thalia {
+		width: 70%;
+		margin: 0 auto;
+		display: block;
+	}
+}
+/*END INTRO SECTION*/
+
+/*ACTUAL PORTFOLIO BEGINS*/
+#portfolio {
+	padding-top: 100px;
+	position: relative;
+	top: 100%;
+	background-color: #BF91C4;
+}
+
+.intro-column {
+	/*padding: 0px 20px;*/
+	padding: 0% 5%;
+}
+
+.intro-pic-column {
+	/*Aligns top of pic to top of text*/
+	/*padding: 22px 20px 0px 20px;*/
+	padding: 2% 5% 0% 5%;
+}
+
+.spacing {
+	margin-top: 100px;
+}
+
+/*ACTUAL RESUME BEGINS*/
+.mid-purple {
+	background-color: #5C3666;
+}
+
+.dark-purple {
+	background-color: #310F31;
+}
+
+#skills, #history, .projects, .title {
+	font-size: 30px !important;
+	color: #FFF !important;
+	font-family: Montserrat, sans-serif !important;
+}
+
+.project-h {
+	font-size:60px;
+	/*font-size: 4vw;*/
+}
+
+.title:hover .my-rotate{
+	transform: rotate(360deg);
+	transition: all .6s ease;
+}
+
+.content {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.h-bold {
+	font-weight: 550;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+	.content {
+		font-size: 15px;
+		line-height: 25px;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+	.content {
+		font-size: 15px;
+		line-height: 25px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.content {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+	h2, .project-h {
+		font-size: 50px;
+	}
+	#skills, #history, .projects, .title {
+		font-size: 22px !important;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+	h2, .project-h {
+		font-size: 40px;
+	}
+	#skills, #history, .projects, .title {
+		font-size: 20px !important;
+	}
+}
+
+@media only screen (min-width: 600px) and (max-width: 767px) {
+	h2, .project-h {
+		font-size: 50px;
+	}
+	#skills, #history, .projects {
+		font-size: 30px;
+	}
+	.title {
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (min-width:520px) and (max-width: 600px) {
+	.title {
+		font-size: 25px !important;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.title {
+		font-size: 20px !important;
+		line-height: 40px !important;
+	}
+}
+
+#changing-purple {
+	background-color: #310F31;
+}
+
+@media only screen and (max-width: 767px) {
+	#changing-purple {
+		background-color: #5C3666;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.project-h {
+		font-size: 50px;
+	}
+}
+
+/*.projects font size found next to #skills, #history*/
+
+.my-column {
+	padding: 40px 70px 50px 70px;
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 768px) {
+	.my-column {
+		padding: 0% 8% 3% 8%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.my-column {
+		/*padding: 0px 25px 20px 25px;*/
+		padding: 0% 5% 3% 5%;
+	}
+}
+/*END PORTFOLIO*/
+
+/*MORE INFO*/
+.my-info-column {
+	padding: 0px 70px 20px 70px;
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 768px) {
+	.my-info-column {
+		padding: 0% 2% 2% 2%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.my-info-column {
+		/*padding: 0px 25px 20px 25px;*/
+		padding: 0% 6.5% 3% 6.5%;
+	}
+}
+
+.my-yellow {
+	background-color: #FDC134;
+}
+
+#more-info {
+	padding-bottom: 20px;
+}
+
+.info-wrapper{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info-wrapper:hover #email {
+	color: #BF91C4;
+}
+
+.info-wrapper:hover #email-link {
+	color: #BF91C4;
+}
+
+.info-wrapper:hover #flickr{
+	color: #BF91C4;
+}
+
+.info-wrapper:hover #flickr-link{
+	color: #BF91C4;
+}
+
+i {
+	margin: 0px !important;
+}
+
+.info-wrapper:hover .icon {
+	/*For GitHub icon*/
+	fill: #BF91C4;
+}
+
+.info-wrapper:hover #github-link {
+	color: #BF91C4;
+}
+
+.icon-wrapper {
+	/*For GitHub icon*/
+	width: 112px;
+	height: 112px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.icon {
+	/*For GitHub icon*/
+	fill-rule:evenodd;
+	clip-rule:evenodd;
+	fill:#FFFFFF;
+}
+/*END MORE INFO*/
+
+/*DOWNLOAD RESUME*/
+.my-bottom-column {
+	padding: 50px 0px;
+}
+
+#download-resume a:hover {
+	color: #310f31 !important;
+}
