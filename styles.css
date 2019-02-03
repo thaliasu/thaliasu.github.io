@@ -43,12 +43,29 @@ i{
 	color: #310F31;
 }
 
+#nav-icon {
+	cursor: pointer;
+}
+
 .my-nav {
 	padding: 20px;
 }
 
 nav {
 	height: 12%;
+}
+
+#close-wrapper {
+	margin-bottom: 10px;
+}
+
+#close-wrapper:hover {
+	background: rgba(0,0,0,0); /*gets rid of highlighting whole line*/
+	cursor: default;
+}
+
+#close-icon:hover {
+	cursor: pointer;
 }
 /*END NAV*/
 
@@ -59,6 +76,12 @@ nav {
 	font-size: 30px !important;
 	width: 50% !important;
 	z-index: 100000 !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.sidebar {
+		width: 100% !important;
+	}
 }
 
 /*.ui.visible.uncover.sidebar {
@@ -113,6 +136,7 @@ body.pushable {
 
 #scroll-down {
 	margin-top: 20px;
+	cursor: pointer;
 }
 
 @media only screen and (orientation: landscape) {
