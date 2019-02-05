@@ -36,6 +36,16 @@ i{
 	/*global right float*/
 	float: right;
 }
+
+::selection {
+	color: #FFF;
+	background: #F63970;
+}
+
+::-moz-selection { /* Code for Firefox */
+	color: #FFF;
+	background: #F63970;
+}
 /*END GLOBAL*/
 
 /*NAV*/
