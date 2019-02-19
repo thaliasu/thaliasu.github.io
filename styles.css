@@ -46,6 +46,14 @@ i{
 	color: #FFF;
 	background: #F63970;
 }
+
+.mid-purple {
+	background-color: #5C3666;
+}
+
+.dark-purple {
+	background-color: #310F31;
+}
 /*END GLOBAL*/
 
 /*NAV*/
@@ -212,14 +220,6 @@ INTRO SECTION*/
 }
 
 /*ACTUAL RESUME BEGINS*/
-.mid-purple {
-	background-color: #5C3666;
-}
-
-.dark-purple {
-	background-color: #310F31;
-}
-
 #skills, #history, .projects, .title {
 	font-size: 30px !important;
 	color: #FFF !important;
@@ -343,6 +343,27 @@ INTRO SECTION*/
 		padding: 0% 5% 3% 5%;
 	}
 }
+
+#sparks-changing-purple {
+	background-color: #5C3666;
+}
+
+@media only screen and (max-width: 767px) {
+	#sparks-changing-purple {
+		background-color: #310f31;
+	}
+}
+
+#tba-changing-purple {
+	background-color: #310f31;
+}
+
+@media only screen and (max-width: 767px) {
+	#tba-changing-purple {
+		background-color: #5C3666;
+	}
+}
+
 /*END PORTFOLIO*/
 
 /*MORE INFO*/
