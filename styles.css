@@ -23,8 +23,8 @@ h2 {
 	font-size: 60px;
 }
 
-button:hover {
-	color: #310f31 !important;
+button a:hover {
+	color: #310f31;
 }
 
 i{
@@ -181,6 +181,11 @@ INTRO SECTION*/
 	#intro {
 		font-size: 35px;
 	}
+}
+
+#thalia {
+	width: 100%;
+	height: auto;
 }
 
 @media only screen and (max-width: 767px) {
