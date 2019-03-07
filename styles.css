@@ -238,7 +238,7 @@ INTRO SECTION*/
 
 .title:hover .my-rotate{
 	transform: rotate(360deg);
-	transition: all .6s ease;
+	transition: all .4s linear;
 }
 
 .content {
