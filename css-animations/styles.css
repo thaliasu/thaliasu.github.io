@@ -1,0 +1,523 @@
+html, body{
+  height: 100%;
+  width:100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#logo {
+	position: absolute;
+	opacity: .5;
+	width: 30px;
+	height: auto;
+	margin: 15px;
+	z-index: 100;
+}
+
+.parent {
+	position: relative;
+	height: 100%;
+}
+
+.child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%,-50%);
+	z-index: 99;
+
+	/*Button Presentation*/
+	width: 275px;
+	height: 275px;
+	border: 8px white solid;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	outline: none;
+
+	/*Button Text*/
+	text-align: center;
+	color: #FFF;
+	font-family: 'Pacifico', cursive;
+	font-size: 48px;
+	margin: 0;
+}
+
+.circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%,-50%);
+	z-index: 98;
+
+	width: 255px;
+	height: 255px;
+	border: 8px white solid;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+	outline: none;
+
+	animation: pulse 3s ease-in infinite;
+}
+
+.circle:nth-of-type(2) {
+	animation: pulse 3s ease-in 1s infinite;
+}
+
+.circle:nth-of-type(3) {
+	animation: pulse 3s ease-in 2s infinite;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+@keyframes pulse {
+     from{
+          box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+     }
+     to{
+          box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
+     }
+}
+
+/*SUNNY CSS*/
+.sunny {
+	/*background-color: #7FDBFF;*/
+  	background-image: linear-gradient(#2cb5e8, #7FDBFF);
+}
+
+.sun-btn {
+	background-color: #7FDBFF;
+}
+
+img {
+	position: absolute;
+}
+
+#cloud1 {
+	top: 2%;
+	left: 2%;
+	animation: wind 40s linear 1 normal;
+	animation-fill-mode: forwards;
+}
+
+#cloud1-hidden {
+	top: 2%;
+	left: -400px;
+	animation: wind 40s linear infinite normal;
+	animation-delay: 40s;
+}
+
+@media only screen and (max-width: 600px) {
+	#cloud1, #cloud1-hidden {
+		width: 200px;
+		top: 2%;
+	}
+	#cloud1 {
+		top: 2%;
+		left: 2%;
+		animation: wind-mobile 15s linear 1 normal;
+		animation-fill-mode: forwards;
+	}
+
+	#cloud1-hidden {
+		left: -300px;
+		animation: wind-mobile 15s linear infinite normal;
+		animation-delay: 10s;
+	}
+}
+
+#cloud2 {
+	top: 35%;
+	left: 30%;
+	width: 200px;
+	animation: wind 30s linear 1 normal;
+	animation-fill-mode: forwards;
+}
+
+#cloud2-hidden {
+	top: 35%;
+	left: -300px;
+	width: 200px;
+	animation: wind 30s linear infinite normal;
+	animation-delay: 30s;
+}
+
+@media only screen and (max-width: 600px) {
+	#cloud2, #cloud2-hidden {
+		width: 100px;
+		top: 18%;
+	}
+	#cloud2 {
+		left: 60%;
+		animation: wind-mobile 10s linear 1 normal;
+		animation-fill-mode: forwards;
+	}
+	#cloud2-hidden {
+		left: -100px;
+		animation: wind-mobile 10s linear infinite normal;
+		animation-delay: 5s;
+	}
+}
+
+#cloud3 {
+	top: 70%;
+	left: 10%;
+	width: 400px;
+	animation: wind 80s linear 1 normal;
+	animation-fill-mode: forwards;
+}
+
+#cloud3-hidden {
+	top: 70%;
+	left: -500px;
+	width: 400px;
+	animation: wind 80s linear infinite normal;
+	animation-delay: 80s;
+}
+
+@media only screen and (max-width: 600px) {
+	#cloud3, #cloud3-hidden {
+		top: 76%;
+		width: 275px;
+	}
+	#cloud3 {
+		animation: wind 20s linear 1 normal;
+		animation-fill-mode: forwards;
+	}
+	#cloud3-hidden {
+		left: -300px;
+		animation: wind 20s linear infinite normal;
+		animation-delay: 10s;
+	}
+}
+
+#cloud4 {
+	top: 14%;
+	left: 70%;
+	width: 225px;
+	animation: wind 33s linear 1 normal;
+	animation-fill-mode: forwards;
+}
+
+#cloud4-hidden {
+	top: 14%;
+	left: -225px;
+	width: 225px;
+	animation: wind 33s linear infinite normal;
+	animation-delay: 13s;
+}
+
+@media only screen and (max-width: 600px) {
+	#cloud4, #cloud4-hidden {
+		visibility: hidden;
+	}
+}
+
+#cloud5 {
+	top: 55%;
+	left: 80%;
+	animation: wind 40s linear 1 normal;
+	animation-fill-mode: forwards;
+}
+
+#cloud5-hidden {
+	top: 55%;
+	left: -300px;
+	animation: wind 40s linear infinite normal;
+	animation-delay: 30s;
+}
+
+@media only screen and (max-width: 600px) {
+	#cloud5, #cloud5-hidden {
+		visibility: hidden;
+	}
+}
+
+
+@keyframes wind {
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(2100px);
+	}
+}
+
+@keyframes wind-mobile {
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(600px);
+	}
+}
+
+/*SNOWY CSS*/
+.snowy {
+	/*background-color: #6D67FE;*/
+  	background-image: linear-gradient(#5B54FE, #6D67FE);
+}
+
+.snow-btn {
+	background-color: #6D67FE;
+}
+
+.snow {
+	animation: drift 40s linear infinite,
+		shake 10s ease-in-out infinite;
+}
+
+/*The point where I learned the keyword is nth-of-type, not nth-child*/
+.snow:nth-of-type(1) {
+	top: -20px;
+	left: 5%;
+}
+
+.snow:nth-of-type(2) {
+	top: -20px;
+	left: 10%;
+	animation-delay: 8s;
+}
+
+.snow:nth-of-type(3) {
+	top: 10%;
+	left: 20%;
+	width: 15px;
+	animation: drift 21s linear 1,
+		shake 0s,
+		shake2 10s ease-in-out 21;
+	animation-fill-mode: forwards;
+}
+
+.snow:nth-of-type(4) {
+	top: -15px;
+	left: 25%;
+	width: 15px;
+	animation: drift 25s linear infinite,
+		shake 0s,
+		shake2 10s ease-in-out infinite;
+	animation-delay: 1s;
+}
+
+.snow:nth-of-type(5) {
+	top: -20px;
+	left: 30%;
+	animation-delay: 15s;
+}
+
+.snow:nth-of-type(6) {
+	top: -20px;
+	left: 35%;
+	animation-delay: 1s;
+}
+
+.snow:nth-of-type(7) {
+	top: -20px;
+	left: 40%;
+	animation-delay: 5s;
+}
+
+.snow:nth-of-type(8) {
+	top: 50%;
+	left: 43%;
+	width: 15px;
+	animation: drift 25s linear 1,
+		shake 0s,
+		shake2 10s ease-in-out 25;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+.snow:nth-of-type(9) {
+	top: 15%;
+	left: 45%;
+	animation: drift 40s linear 1,
+		shake 10s ease-in-out 40;
+	animation-fill-mode: forwards;
+}
+
+.snow:nth-of-type(10) {
+	top: -20px;
+	left: 50%;
+	animation: drift 30s linear 1,
+		shake 15s ease-in-out infinite;
+	animation-delay: 1s;
+}
+
+.snow:nth-of-type(11) {
+	top: -15px;
+	left: 50%;
+	width: 15px;
+	animation: drift 25s linear 1,
+		shake 0s,
+		shake2 10s ease-in-out infinite;
+	animation-delay: 3s;
+}
+
+.snow:nth-of-type(12) {
+	top: -15px;
+	left: 60%;
+	width: 15px;
+	animation: drift 25s linear 1,
+		shake 0s,
+		shake2 10s ease-in-out infinite;
+}
+
+.snow:nth-of-type(13) {
+	top: -20px;
+	left: 65%;
+}
+
+.snow:nth-of-type(14) {
+	top: -20px;
+	left: 65%;
+	animation-delay: 12s;
+}
+
+.snow:nth-of-type(15) {
+	top: 25px;
+	left: 70%;
+	width: 15px;
+	animation: drift 27s linear 1,
+		shake 0s,
+		shake2 13s ease-in-out 25;
+	animation-fill-mode: forwards;
+}
+
+.snow:nth-of-type(16) {
+	top: -20px;
+	left: 75%;
+	animation-delay: 22s;
+}
+
+.snow:nth-of-type(17) {
+	top: -20px;
+	left: 80%;
+	animation-delay: 35s;
+}
+
+.snow:nth-of-type(18) {
+	top: 35px;
+	left: 85%;
+	animation: drift 25s linear 1,
+		shake 13s ease-in-out 25;
+	animation-fill-mode: forwards;
+}
+
+.snow:nth-of-type(19) {
+	top: -15px;
+	left: 90%;
+	width: 15px;
+	animation: drift 25s linear 1,
+		shake 0s,
+		shake2 10s ease-in-out 25;
+}
+
+
+@keyframes drift {
+	from{
+	}
+	to{
+		top: 102%;
+	}
+}
+
+@keyframes shake {
+	0%, 100% {
+		transform: translateX(0%);
+	}
+	50% {
+		transform: translateX(80px);
+	}
+}
+
+@keyframes shake2 {
+	0%, 50%, 100% {
+		transform: translateX(0%);
+	}
+	25%, 75% {
+		transform: translateX(50px);
+	}
+}
+
+/*RAINY CSS*/
+.rainy {
+	/*background-color: #54278D;*/
+  	background-image: linear-gradient(#7136BC, #54278D);
+  	animation: lightning 3s ease-in-out infinite;
+}
+
+.rain-btn {
+	background-color: #7136BC;
+}
+
+.raincloud:nth-of-type(1) {
+	top: -25%;
+	left: -5%;
+	width: 700px;
+	animation: thunder 4s linear infinite;
+}
+
+.raincloud:nth-of-type(2) {
+	top: -20%;
+	left: 33%;
+	width: 520px;
+	animation: thunder 3s linear infinite;
+}
+
+.raincloud:nth-of-type(3) {
+	top: -25%;
+	left: 63%;
+	width: 700px;
+	animation: thunder 2s linear infinite;
+}
+
+.path1, .path2 {
+	fill:none;
+	stroke:#6d67fe;
+	stroke-width:5px;
+}
+
+.path1 {
+	stroke-dasharray: 90;
+	animation: rain 5s linear infinite backwards;
+}
+
+.path2 {
+	stroke-dasharray: 108;
+	animation: rain 8s linear infinite backwards;
+}
+
+@keyframes thunder {
+	0%, 100% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(2%);
+	}
+}
+
+@keyframes lightning {
+	0%, 20%, 40% {
+		background-image: linear-gradient(#7136BC, #54278D);
+	}
+	10%, 30% {
+		background-image: linear-gradient(#7136BC, #7136BC);
+	}
+}
+
+@keyframes rain {
+	to{
+		stroke-dashoffset: -1080;
+	}
+}
