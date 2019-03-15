@@ -66,11 +66,20 @@ i{
 }
 
 .my-nav {
-	padding: 20px;
+	padding: 1em;
+}
+
+@media only screen and (max-width: 415px) {
+	.my-nav {
+		padding: 1em .5em;
+	}
 }
 
 nav {
-	height: 12%;
+	height: 6em;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
 }
 
 #close-wrapper {
@@ -101,15 +110,6 @@ nav {
 		width: 100% !important;
 	}
 }
-
-/*.ui.visible.uncover.sidebar {
-	Line 37595 in semantic.css
-	Not working
-	-webkit-transition: -webkit-transform 12000ms ease !important;
-	transition: -webkit-transform 12000ms ease !important;
-	transition: transform 12000ms ease !important;
-	transition: transform 12000ms ease, -webkit-transform 12000ms ease !important;
-}*/
 
 .menu .item {
 	color: #FFF !important;
@@ -190,7 +190,7 @@ INTRO SECTION*/
 
 @media only screen and (max-width: 767px) {
 	#intro {
-		font-size: 40px;
+		font-size: 35px;
 		text-align: center;
 	}
 	#thalia {
@@ -206,6 +206,7 @@ INTRO SECTION*/
 	padding-top: 100px;
 	position: relative;
 	top: 100%;
+	width: 100%;
 	background-color: #BF91C4;
 }
 
