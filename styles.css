@@ -61,8 +61,14 @@ i{
 	color: #310F31;
 }
 
-#nav-icon {
+#nav-icon, #nav-btn {
 	cursor: pointer;
+}
+
+#nav-btn {
+	padding: 1px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0)
 }
 
 .my-nav {

@@ -8,7 +8,7 @@ $('.ui.sticky')
   	context: '#portfolio'
   });
 
-$('#nav-icon').click(function(){
+$('#nav-btn').click(function(){
 	$('.sidebar')
 		/*.sidebar('toggle', 'defaultTransition', {
 			computer: {
