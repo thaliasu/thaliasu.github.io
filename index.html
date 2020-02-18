@@ -6,8 +6,8 @@
 	<title>Thalia Su - Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 	<script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -16,18 +16,17 @@
 	<script src="semantic-ui/semantic.min.js"></script>
 </head>
 <body>
-	<nav>
-		<div class="my-nav">
-			<button id="nav-btn" class="right"><i id="nav-icon" class="right huge bars icon"></i></button>
-			<div class="ui right vertical menu sidebar">
-				<a id="close-wrapper" class="item"><i id="close-icon" class="right close icon"></i></a>
-				<a href="#" class="item">Welcome</a>
-				<a href="#start-intro" class="item">Intro</a>
-				<a href="#start-text-content" class="item">Portfolio</a>
-				<a href="#start-links" class="item">Links</a>
-				<a href="#start-resume" class="item">Resume</a>
-			</div>
-		</div>
+	<nav role="navigation">
+		<button id="nav-btn" class="right">
+			<svg id="hamburger-icon" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#FFF"/></svg>
+			<svg id="x-icon" height="24" viewBox="0 0 24 24" width="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#FFF"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+		</button>
+		<ul>
+			<li id="0" class="active"><a id="welcome-link" class="nav-link">Welcome</a></li>
+			<li id="1"><a class="nav-link" href="#about">About</a></li>
+			<li id="2"><a class="nav-link" href="#changing-purple">Portfolio</a></li>
+			<li class="nav-link"><span id="download-resume"><a href="doc/resume-3.0.pdf" target="_blank" rel="noopener noreferrer">Resume</a></span></li>
+		</ul>
 	</nav>
 	<div class="wrapper">
 		<svg id="morph" height="100%" width="100%" viewBox="0 0 815 490" xml:space="preserve">
@@ -43,19 +42,19 @@
 		</svg>
 		<div id="scroll-down" class="ui grid">
 			<div class="centered row">
-				<i id="scroll-icon" class="huge angle down icon"></i>
-			</div><span id="start-intro"></span>
+				<svg id="scroll-icon" viewBox="0 0 56.4 38.1"><style>.cls-1{fill:none;}</style><polygon class="cls-1 morph-scroll-icon" points="2.1 9.9 9.9 2.1 28.2 20.4 46.6 2.1 54.4 9.9 28.2 36 2.1 9.9"/></svg>
+			</div>
 		</div>
 	</div>
 
 
-	<!--BEGIN PORTFOLIO-->
-	<div id="portfolio" class="pusher">
+	<!--BEGIN ABOUT-->
+	<div id="about">
 		<div class="ui stackable two column grid container">
 			<div class="row">
 				<div class="doubling column">
 					<div class="intro-pic-column">
-						<img id="thalia" src="imgs/thalia.png" alt="Thalia Su">
+						<img id="thalia" src="img/thalia.png" alt="Thalia Su">
 					</div>
 				</div>
 				<div class="doubling column">
@@ -76,7 +75,7 @@
 						<span class="bold">Languages</span><br>HTML, CSS, JavaScript, jQuery, PHP, SQL<br><br>
 						<span class="bold">Frameworks</span><br>Materialize, Semantic UI, Anime.js<br><br>
 						<span class="bold">Adobe</span><br>Photoshop, Lightroom, Illustrator, InDesign, XD<br><br>
-						<span class="bold">Misc</span><br>Heroku, GitHub, Wordpress, Figma, SASS<br>
+						<span class="bold">Misc</span><br>Heroku, GitHub, Wordpress, Figma, SASS, Unity<br>
 					</p>
 				</div>
 			</div>
@@ -132,28 +131,30 @@
 				</div>
 			</div>
 		</div>
+		<!-- END OF ABOUT -->
 
+		<!-- BEGIN PORTFOLIO -->
 		<div class="ui stackable three column grid">
 			<div id="changing-purple" class="column">
 				<div class="my-column">
-					<h2 class="project-h">Magical Girl</h2>
+					<h2 id="project-h">Magical Girl</h2>
 					<p class="projects">I combined knowledge from two degrees to write a media
 					analysis of the "magical girl" subgenre & customize a site using <span class="bold">Materialize CSS</span>’s grid & components.</p>
-					<a href="https://magical-girl.herokuapp.com" target="_blank"><button class="massive ui inverted button">See Project</button></a>
+					<a href="https://magical-girl.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 			<div class="column">
 				<div class="my-column">
 					<h2 class="project-h">Eventcrunch</h2>
 					<p class="projects">I worked on a team to create a mashup of <span class="bold">BandsInTown</span> & <span class="bold">Google Maps API</span> for a UCF course. I used <span class="bold">JS</span>, <span class="bold">PHP</span> & <span class="bold">SQL</span> to validate & store user info in login, registration & profile forms.</p>
-					<a href="https://event-crunch.herokuapp.com" target="_blank"><button class="massive ui inverted button">See Project</button></a>
+					<a href="https://event-crunch.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 			<div class="mid-purple column">
 				<div class="my-column">
 					<h2 class="project-h">Fencing Branding</h2>
 					<p class="projects">For The Fencing Knights at UCF, I created <span class="bold">social media graphics</span> & designed their t-shirt for the 2nd annual Black & Gold competition using <span class="bold">Photoshop</span>.</p>
-					<a href="docs/fencing-branding.pdf" target="_blank"><button class="massive ui inverted button">See Project</button></a>
+					<a href="doc/fencing-branding.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 		</div>
@@ -163,7 +164,7 @@
 				<div class="my-column">
 					<h2>Sparks Magazine</h2>
 					<p class="projects">I led the UCF branch as <span class="bold">editor-in-chief</span> for a year. In that time, I helped produce two print issues, secure funding for the magazine, and organize Sparks' first-ever leadership summit. Over the years, I also contributed to magazine as a <span class="bold">writer</span>, <span class="bold">online content coordinator</span>, <span class="bold">managing editor</span>, and <span class="bold">designer</span>.</p>
-					<a href="docs/sparks-portfolio.pdf" target="_blank"><button class="massive ui inverted button">See Project</button></a>
+					<a href="doc/sparks-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 			<div id="tba-changing-purple" class="six wide column">
@@ -182,13 +183,13 @@
 					<div class="ui stackable three column grid">
 						<div class="center aligned column">
 							<div class="info-wrapper">
-								<a href="mailto:thalia989231@knights.ucf.edu?Subject=Portfolio%20Query"><i id="email" class="massive envelope outline icon"></i></a>
-								<h2><a id="email-link" href="mailto:thalia989231@knights.ucf.edu">Email</a></h2>
+								<a href="mailto:thalia989231@knights.ucf.edu?Subject=Portfolio%20Query" rel="noopener noreferrer"><i id="email" class="massive envelope outline icon"></i></a>
+								<h2><a id="email-link" href="mailto:thalia989231@knights.ucf.edu" rel="noopener noreferrer">Email</a></h2>
 							</div>
 						</div>
 						<div class="center aligned column">
 							<div class="info-wrapper">
-								<a href="https://github.com/thaliasu" target="_blank">
+								<a href="https://github.com/thaliasu" target="_blank" rel="noopener noreferrer">
 									<div class="icon-wrapper">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 viewBox="0 0 112 112" style="enable-background:new 0 0 112 112;" xml:space="preserve">
@@ -201,13 +202,13 @@
 										</svg>
 									</div>
 								</a>
-								<h2><a id="github-link" href="https://github.com/thaliasu" target="_blank">GitHub</a></h2>
+								<h2><a id="github-link" href="https://github.com/thaliasu" target="_blank" rel="noopener noreferrer">GitHub</a></h2>
 							</div>
 						</div>
 						<div class="center aligned column">
 							<div class="info-wrapper">
-								<a href="https://www.flickr.com/photos/154534744@N06/albums" target="_blank"><i id="flickr" class="massive camera retro link icon"></i></a>
-								<h2><a id="flickr-link" href="https://www.flickr.com/photos/154534744@N06/albums" target="_blank">Flickr</a></h2>
+								<a href="https://www.flickr.com/photos/154534744@N06/albums" target="_blank" rel="noopener noreferrer"><i id="flickr" class="massive camera retro link icon"></i></a>
+								<h2><a id="flickr-link" href="https://www.flickr.com/photos/154534744@N06/albums" target="_blank" rel="noopener noreferrer">Flickr</a></h2>
 							</div>
 						</div>
 					</div>
@@ -215,13 +216,13 @@
 			</div>
 		</div>
 
-		<div class="ui center aligned grid">
+		<!-- <div class="ui center aligned grid">
 			<div id="start-resume" class="row">
 				<div class="my-bottom-column">
-					<a href="docs/resume-3.0.pdf" target="_blank"><button class="massive inverted ui button">Download Resume PDF</button></a>
+					<a href="doc/resume-3.0.pdf" target="_blank"><button class="massive inverted ui button">Download Resume PDF</button></a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div><!--END PORTFOLIO-->
 
 	
