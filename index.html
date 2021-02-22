@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Thalia Su - Portfolio</title>
+	<title>Thalia Su Portfolio | Experienced UX Designer & Front-End Web Developer</title>
 
 	<link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -23,11 +23,12 @@
 		</button>
 		<ul>
 			<li id="0" class="active"><a id="welcome-link" class="nav-link">Welcome</a></li>
-			<li id="1"><a class="nav-link" href="#about">About</a></li>
-			<li id="2"><a class="nav-link" href="#changing-purple">Portfolio</a></li>
+			<li id="1"><a class="nav-link" href="#main">About</a></li>
+			<li id="2"><a class="nav-link" href="#portfolio">Portfolio</a></li>
 			<li class="nav-link"><span id="download-resume"><a href="docs/thalia-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></span></li>
 		</ul>
 	</nav>
+
 	<div class="wrapper">
 		<svg id="morph" height="100%" width="100%" viewBox="0 0 815 490" xml:space="preserve">
 			<path class="morph" d="M156.3,100.8H10.7V15h396.5v85.8H261.6V470H156.3V100.8z"/>
@@ -50,21 +51,20 @@
 	<!-- Temporary toast message for maintainence -->
 	<div aria-role="message to user" class="message">I'm making some changes around here. New content is coming very soon!</div> 
 
-	<!--BEGIN ABOUT-->
-	<div id="about">
+	<!--BEGIN ABOUT & MAIN-->
+	<main id="main">
 		<div class="ui stackable two column grid">
-			<div class="row">
+			<!-- <div class="row"> -->
 				<div class="column flex">
 					<div class="intro-pic-column">
 						<img id="thalia" src="imgs/thalia.png" alt="Thalia Su">
 					</div>
 				</div>
 				<div class="column flex">
-					<div class="intro-column">
-						<div id="intro">Hello, I'm Thalia. I am a user experience designer with four years of experience in the field of design. I strive to discover user needs through collaboration and Agile work methods. <br><br>I have organized journey mapping sessions in the past to guide development of user flows and information architecture. I frequently iterate prototypes after receiving feedback or completing user testing. <br><br>Most of my work involves using a prototyping app like Adobe XD but I can also design graphics or code web designs.</div>
-					</div>
+					<p id="intro" class="intro-column">Hello, I'm Thalia. I am a user experience designer with four years of experience in the field of design. I strive to discover user needs through collaboration and Agile work methods. <br><br>I have organized journey mapping sessions in the past to guide development of user flows and information architecture. I frequently iterate prototypes after receiving feedback or completing user testing. <br><br>Most of my work involves using a prototyping app like Adobe XD but I can also design graphics or code web designs.
+					</p>
 				</div>
-			</div>
+			<!-- </div> -->
 		</div>
 		<div class="spacing"></div>
 
@@ -109,8 +109,8 @@
 								Provided friendly customer service & stored important textbook & course information in company database
 							</div>
 
-						<br>
-						<h3>College</h3>
+							<br>
+							<h3>College</h3>
 							<div class="title">
 								Graduated from UCF<i class="my-rotate plus icon"></i>
 							</div>
@@ -149,10 +149,30 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- END OF ABOUT -->
+		</div> <!-- END OF ABOUT -->
 
-		<!-- BEGIN PORTFOLIO -->
+	<!-- BEGIN PORTFOLIO -->
+	<div id="portfolio">
+		<div class="half-spacing"></div>
+		<div class="ui stackable two column grid">
+			<div class="column flex">
+				<div class="intro-pic-column">
+					<img id="ipad" src="imgs/di-small.png" alt="iPad displaying user interface of user profile for IMITATE."/>
+				</div>
+			</div>
+			<div class="column flex align-self">
+				<div class="row">
+					<div class="intro-column">
+						<h2>Design Interactive</h2>
+						<p class="projects">As the primary UX Designer for the Performance Augmentation team at DI, I worked mainly on a couple projects, one that focused on effective skill acquisition, and another that sought to assist users with navigation.</p>
+
+						<a href="docs/thalia-su-di-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Projects</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="half-spacing"></div>
+
 		<div class="ui stackable three column grid">
 			<div id="changing-purple" class="column">
 				<div class="my-column">
@@ -194,7 +214,7 @@
 				</div>
 			</div>
 		</div>
-		
+	
 		<div class="ui my-yellow grid">
 			<div class="column"><span id="start-links"></span>
 				<div class="my-info-column">
@@ -222,7 +242,7 @@
 				</div>
 			</div>
 		</div>
-	</div><!--END PORTFOLIO-->
+	</main><!--END PORTFOLIO-->
 
 	
 	<script src="js/anime.min.js"></script>

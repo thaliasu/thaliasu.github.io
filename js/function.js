@@ -5,7 +5,7 @@ $(document).ready(function() {
 	//Scroll down to About when icon is clicked
 	$("#scroll-icon").click(function() {
 	    $([document.documentElement, document.body]).animate({
-	        scrollTop: $("#about").offset().top,
+	        scrollTop: $("#main").offset().top,
 	        easing: 'swing'
 	    }, 1000);
 	});
@@ -65,7 +65,7 @@ $(document).ready(function() {
 		var windowHeight = $(window).height();
 
 		var windowTop = $(window).scrollTop();
-		var aboutTop = $('#about').offset().top;
+		var aboutTop = $('#main').offset().top;
 		var portfolioTop = $('#changing-purple').offset().top;
 
 		var passWelcome = windowHeight-navHeight;
