@@ -29,6 +29,10 @@
 		</ul>
 	</nav>
 
+	<header>
+		<h1>Welcome to Thalia Su's Portfolio</h1>
+	</header>
+
 	<div class="wrapper">
 		<svg id="morph" height="100%" width="100%" viewBox="0 0 815 490" xml:space="preserve">
 			<path class="morph" d="M156.3,100.8H10.7V15h396.5v85.8H261.6V470H156.3V100.8z"/>
@@ -53,16 +57,20 @@
 
 	<!--BEGIN ABOUT & MAIN-->
 	<main id="main">
-		<div class="ui stackable two column grid">
+		<div class="ui stackable two column grid flex">
 			<!-- <div class="row"> -->
 				<div class="column flex">
+					<h2 class="vertical-text">About</h2>
 					<div class="intro-pic-column">
 						<img id="thalia" src="imgs/thalia.png" alt="Thalia Su">
 					</div>
 				</div>
-				<div class="column flex">
-					<p id="intro" class="intro-column">Hello, I'm Thalia. I am a user experience designer with four years of experience in the field of design. I strive to discover user needs through collaboration and Agile work methods. <br><br>I have organized journey mapping sessions in the past to guide development of user flows and information architecture. I frequently iterate prototypes after receiving feedback or completing user testing. <br><br>Most of my work involves using a prototyping app like Adobe XD but I can also design graphics or code web designs.
-					</p>
+				<div class="column flex intro-column">
+					<div class="row">
+						<h3>Bio</h3>
+						<p id="intro">Hello, I'm Thalia. I am a user experience designer with four years of experience in the field of design. I strive to discover user needs through collaboration and Agile work methods. <br><br>I have organized journey mapping sessions in the past to guide development of user flows and information architecture. I frequently iterate prototypes after receiving feedback or completing user testing. <br><br>Most of my work involves using a prototyping app like Adobe XD but I can also design graphics or code web designs.
+						</p>
+					</div>
 				</div>
 			<!-- </div> -->
 		</div>
@@ -72,7 +80,7 @@
 			<div class="mid-purple six wide column">
 				<!--my-column adds padding-->
 				<div class="my-column">
-					<h2>Skills</h2>
+					<h3>Skills</h3>
 					<p id="skills">
 						<span class="bold">Languages</span><br>HTML, CSS, JavaScript, jQuery, PHP, SQL<br><br>
 						<span class="bold">Frameworks</span><br>Materialize, Semantic UI, Angular<br><br>
@@ -83,8 +91,8 @@
 			</div>
 			<div class="dark-purple ten wide column">
 				<div class="my-column">
-					<h2>History</h2>
-					<h3>Work</h3>
+					<h3>History</h3>
+					<h4>Work</h4>
 					<div class="ui accordion">
 						<div id="history">
 							<div class="title">
@@ -110,7 +118,7 @@
 							</div>
 
 							<br>
-							<h3>College</h3>
+							<h4>College</h4>
 							<div class="title">
 								Graduated from UCF<i class="my-rotate plus icon"></i>
 							</div>
@@ -153,9 +161,10 @@
 
 	<!-- BEGIN PORTFOLIO -->
 	<div id="portfolio">
-		<div class="half-spacing"></div>
+		<!-- <div class="half-spacing"></div> -->
 		<div class="ui stackable two column grid">
 			<div class="column flex">
+				<h2 class="vertical-text">Portfolio</h2>
 				<div class="intro-pic-column">
 					<img id="ipad" src="imgs/di-small.png" alt="iPad displaying user interface of user profile for IMITATE."/>
 				</div>
@@ -163,7 +172,7 @@
 			<div class="column flex align-self">
 				<div class="row">
 					<div class="intro-column">
-						<h2>Design Interactive</h2>
+						<h3>Design Interactive</h3>
 						<p class="projects">As the primary UX Designer for the Performance Augmentation team at DI, I worked mainly on a couple projects, one that focused on effective skill acquisition, and another that sought to assist users with navigation.</p>
 
 						<a href="docs/thalia-su-di-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Projects</button></a>
@@ -173,42 +182,42 @@
 		</div>
 		<div class="half-spacing"></div>
 
-		<div class="ui stackable three column grid">
-			<div id="changing-purple" class="column">
+		<div class="ui stackable two column grid">
+			<div class="ten wide column dark-purple"> <!--id="sparks-changing-purple" -->
 				<div class="my-column">
-					<h2 id="project-h">Magical Girl</h2>
-					<p class="projects">I combined knowledge from two degrees to write a media
-					analysis of the "magical girl" subgenre & customize a site using <span class="bold">Materialize CSS</span>’s grid & components.</p>
-					<a href="https://magical-girl.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
+					<h3>Sparks Magazine</h3>
+					<p class="projects">I led the UCF branch as <span class="bold">editor-in-chief</span> for a year. In that time, I helped produce two print issues, secure funding for the magazine, and organize Sparks' first-ever leadership summit. Over the years, I also contributed to magazine as a <span class="bold">writer</span>, <span class="bold">online content coordinator</span>, <span class="bold">managing editor</span>, and <span class="bold">designer</span>.</p>
+					<a href="docs/sparks-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
-			<div class="column">
+			<div class="six wide column mid-purple"> <!--id="tba-changing-purple" -->
 				<div class="my-column">
-					<h2 class="project-h">Eventcrunch</h2>
-					<p class="projects">I worked on a team to create a mashup of <span class="bold">BandsInTown</span> & <span class="bold">Google Maps API</span> for a UCF course. I used <span class="bold">JS</span>, <span class="bold">PHP</span> & <span class="bold">SQL</span> to validate & store user info in login, registration & profile forms.</p>
-					<a href="https://event-crunch.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
-				</div>
-			</div>
-			<div class="mid-purple column">
-				<div class="my-column">
-					<h2 class="project-h">Fencing Branding</h2>
+					<h3 class="project-h">Fencing Branding</h3>
 					<p class="projects">For The Fencing Knights at UCF, I created <span class="bold">social media graphics</span> & designed their t-shirt for the 2nd annual Black & Gold competition using <span class="bold">Photoshop</span>.</p>
 					<a href="docs/fencing-branding.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 		</div>
 
-		<div class="ui stackable two column grid">
-			<div id="sparks-changing-purple" class="ten wide column">
+		<div class="ui stackable three column grid">
+			<div class="column"> <!--id="changing-purple" -->
 				<div class="my-column">
-					<h2>Sparks Magazine</h2>
-					<p class="projects">I led the UCF branch as <span class="bold">editor-in-chief</span> for a year. In that time, I helped produce two print issues, secure funding for the magazine, and organize Sparks' first-ever leadership summit. Over the years, I also contributed to magazine as a <span class="bold">writer</span>, <span class="bold">online content coordinator</span>, <span class="bold">managing editor</span>, and <span class="bold">designer</span>.</p>
-					<a href="docs/sparks-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
+					<h3 id="project-h">Magical Girl</h3>
+					<p class="projects">I combined knowledge from two degrees to write a media
+					analysis of the "magical girl" subgenre & customize a site using <span class="bold">Materialize CSS</span>’s grid & components.</p>
+					<a href="https://magical-girl.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
-			<div id="tba-changing-purple" class="six wide column">
+			<div class="column mid-purple">
+				<div class="my-column">
+					<h3 class="project-h">Eventcrunch</h3>
+					<p class="projects">I worked on a team to create a mashup of <span class="bold">BandsInTown</span> & <span class="bold">Google Maps API</span> for a UCF course. I used <span class="bold">JS</span>, <span class="bold">PHP</span> & <span class="bold">SQL</span> to validate & store user info in login, registration & profile forms.</p>
+					<a href="https://event-crunch.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
+				</div>
+			</div>
+			<div class="dark-purple column">
 				<div id="weather-proj" class="my-column">
-					<h2>Change the Weather</h2>
+					<h3>Change the Weather</h3>
 					<p class="projects">In order to better understand <span class="bold">CSS animations</span>, I designed a fun, weather-themed side project.</p>
 					<a href="css-animations/sun.html"><button class="massive ui inverted button">See Project</button></a>
 				</div>
@@ -218,24 +227,24 @@
 		<div class="ui my-yellow grid">
 			<div class="column"><span id="start-links"></span>
 				<div class="my-info-column">
-					<h2 id="more-info">More Info</h2>
+					<h3 id="more-info">More Info</h3>
 					<div class="ui stackable three column grid">
 						<div class="center aligned column">
 							<div class="info-wrapper">
 								<a href="mailto:thaliawithath@gmail.com?Subject=Portfolio%20Query" rel="noopener noreferrer"><i id="email" class="massive envelope icon"></i></a>
-								<h3><a id="email-link" href="mailto:thaliawithath@gmail.com?Subject=Portfolio%20Query" rel="noopener noreferrer">Email</a></h2>
+								<h4><a id="email-link" href="mailto:thaliawithath@gmail.com?Subject=Portfolio%20Query" rel="noopener noreferrer">Email</a></h4>
 							</div>
 						</div>
 						<div class="center aligned column">
 							<div class="info-wrapper">
 								<a href="https://github.com/thaliasu" target="_blank" rel="noopener noreferrer"><i id="github" class="massive github square icon"></i></a>
-								<h3><a id="github-link" href="https://github.com/thaliasu" target="_blank" rel="noopener noreferrer">GitHub</a></h2>
+								<h4><a id="github-link" href="https://github.com/thaliasu" target="_blank" rel="noopener noreferrer">GitHub</a></h4>
 							</div>
 						</div>
 						<div class="center aligned column">
 							<div class="info-wrapper">
 								<a href="https://linkedin.com/in/thalia-su" target="_blank" rel="noopener noreferrer"><i id="linkedin" class="massive linkedin icon"></i></a>
-								<h3><a id="linkedin-link" href="https://linkedin.com/in/thalia-su" target="_blank" rel="noopener noreferrer">LinkedIn</a></h2>
+								<h4><a id="linkedin-link" href="https://linkedin.com/in/thalia-su" target="_blank" rel="noopener noreferrer">LinkedIn</a></h4>
 							</div>
 						</div>
 					</div>

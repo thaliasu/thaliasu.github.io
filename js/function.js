@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 		var windowTop = $(window).scrollTop();
 		var aboutTop = $('#main').offset().top;
-		var portfolioTop = $('#changing-purple').offset().top;
+		var portfolioTop = $('#portfolio').offset().top;
 
 		var passWelcome = windowHeight-navHeight;
 		var passAbout = aboutTop-navHeight;
