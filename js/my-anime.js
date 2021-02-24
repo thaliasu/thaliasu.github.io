@@ -23,7 +23,7 @@ anime.timeline({
 }, '-=2500')
 .add({
 	targets: 'body, nav',
-	backgroundColor: '#FDC134',
+	backgroundColor: '#2E343B',
 	duration: 1
 })
 ;
