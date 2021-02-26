@@ -22,11 +22,11 @@
 			<svg id="hamburger-icon" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#FFF"/></svg>
 			<svg id="x-icon" height="24" viewBox="0 0 24 24" width="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#FFF"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 		</button>
-		<ul>
-			<li id="0" class="active"><a id="welcome-link" class="nav-link">Welcome</a></li>
-			<li id="1"><a class="nav-link" href="#main">About</a></li>
-			<li id="2"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-			<li class="nav-link"><span id="download-resume"><a href="docs/thalia-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></span></li>
+		<ul role="menubar">
+			<li role="menuitem" id="0" class="active"><a id="welcome-link" class="nav-link">Welcome</a></li>
+			<li role="menuitem" id="1"><a class="nav-link" href="#main">About</a></li>
+			<li role="menuitem" id="2"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+			<li role="menuitem" class="nav-link"><span id="download-resume"><a href="docs/thalia-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></span></li>
 		</ul>
 	</nav>
 
@@ -54,7 +54,7 @@
 	</div>
 
 	<!-- Temporary toast message for maintainence -->
-	<div aria-role="message to user" class="message">I'm making some changes around here. New content is coming very soon!</div> 
+	<div role="alert" class="message">I'm making some changes around here. New content is coming very soon!</div> 
 
 	<!--BEGIN ABOUT & MAIN-->
 	<main id="main">
@@ -83,10 +83,10 @@
 				<div class="my-column">
 					<h3>Skills</h3>
 					<p id="skills">
-						<span class="bold">Languages</span><br>HTML, CSS, JavaScript, jQuery, PHP, SQL<br><br>
-						<span class="bold">Frameworks</span><br>Materialize, Semantic UI, Angular<br><br>
-						<span class="bold">Design Tools</span><br>Adobe XD, Photoshop, Lightroom, Illustrator, InDesign, Figma, InVision, Miro<br><br>
-						<span class="bold">Misc</span><br>SASS, Flexbox, Git, Sourcetree, Unity, Anime.js, Wordpress<br>
+						<b>Languages</b><br>HTML, CSS, JavaScript, jQuery, PHP, SQL<br><br>
+						<b>Frameworks</b><br>Materialize, Semantic UI, Angular<br><br>
+						<b>Design Tools</b><br>Adobe XD, Photoshop, Lightroom, Illustrator, InDesign, Figma, InVision, Miro<br><br>
+						<b>Misc</b><br>SASS, Flexbox, Git, Sourcetree, Unity, Anime.js, Wordpress<br>
 					</p>
 				</div>
 			</div>
@@ -144,7 +144,7 @@
 							</div>
 							<div class="content">
 								<span class="h-bold">Jan - Dec '17</span><br>
-								Coordinated with writers, photographers & designers to produce 1 print issue per semester focused on Asian & Pacific Islander American culture & identity
+								Coordinated with writers, photographers & designers to produce two print issues focused on Asian & Pacific Islander American culture & identity
 							</div>
 
 							<div class="title">
@@ -174,7 +174,7 @@
 				<div class="row">
 					<div class="intro-column">
 						<h3>Design Interactive</h3>
-						<p class="projects">As the primary UX Designer for the Performance Augmentation team at DI, I worked mainly on a couple projects, one that focused on effective skill acquisition, and another that sought to assist users with navigation.</p>
+						<p class="projects">As the primary <b>UX Designer</b> for the Performance Augmentation team at DI, I worked extensively on a couple projects, one that focused on effective skill acquisition, and another that sought to assist users with navigation.</p>
 
 						<a href="docs/thalia-su-di-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Projects</button></a>
 					</div>
@@ -187,14 +187,16 @@
 			<div class="ten wide column dark-purple"> <!--id="sparks-changing-purple" -->
 				<div class="my-column">
 					<h3>Sparks Magazine</h3>
-					<p class="projects">I led the UCF branch as <span class="bold">editor-in-chief</span> for a year. In that time, I helped produce two print issues, secure funding for the magazine, and organize Sparks' first-ever leadership summit. Over the years, I also contributed to magazine as a <span class="bold">writer</span>, <span class="bold">online content coordinator</span>, <span class="bold">managing editor</span>, and <span class="bold">designer</span>.</p>
-					<a href="docs/sparks-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
+					<!-- <p class="projects">I led the UCF branch as <b>editor-in-chief</b> for a year. In that time, I helped produce two print issues, secure funding for the magazine, and organize Sparks' first-ever leadership summit. Over the years, I also contributed to magazine as a <b>writer</b>, <b>online content coordinator</b>, <b>managing editor</b>, and <b>designer</b>.</p> -->
+					<p class="projects">Sparks is an Asian & Pacific Islander American magazine offering students APIA representation and a platform to discuss social issues. For issue no. 14, I designed for <b>print and social media</b> with <b>InDesign</b>.
+					</p>
+				<!-- 	<a href="docs/sparks-portfolio.pdf" target="_blank" rel="noopener noreferrer"> --><button class="disabled massive ui inverted button">See Project</button><!-- </a> -->
 				</div>
 			</div>
 			<div class="six wide column mid-purple"> <!--id="tba-changing-purple" -->
 				<div class="my-column">
 					<h3 class="project-h">Fencing Branding</h3>
-					<p class="projects">For The Fencing Knights at UCF, I created <span class="bold">social media graphics</span> & designed their t-shirt for the 2nd annual Black & Gold competition using <span class="bold">Photoshop</span>.</p>
+					<p class="projects">For The Fencing Knights at UCF, I created <b>social media graphics</b> & designed their t-shirt for the 2nd annual Black & Gold competition using <b>Photoshop</b>.</p>
 					<a href="docs/fencing-branding.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
@@ -204,28 +206,28 @@
 			<div class="column"> <!--id="changing-purple" -->
 				<div class="my-column">
 					<h3 id="project-h">Magical Girl</h3>
-					<p class="projects">I combined knowledge from two degrees to write a media
-					analysis of the "magical girl" subgenre & customize a site using <span class="bold">Materialize CSS</span>’s grid & components.</p>
+					<p class="projects">I combined knowledge from creative writing and <b>web design</b> to write a media
+					analysis of the "magical girl" subgenre & customize a site using <b>Materialize CSS</b>’s grid & components.</p>
 					<a href="https://magical-girl.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 			<div class="column mid-purple">
 				<div class="my-column">
 					<h3 class="project-h">Eventcrunch</h3>
-					<p class="projects">I worked on a team to create a mashup of <span class="bold">BandsInTown</span> & <span class="bold">Google Maps API</span> for a UCF course. I used <span class="bold">JS</span>, <span class="bold">PHP</span> & <span class="bold">SQL</span> to validate & store user info in login, registration & profile forms.</p>
+					<p class="projects">I worked on a small team to create a mashup of <b>BandsInTown & Google Maps API</b> for a UCF course. I coded <b>JS, PHP & SQL</b> to validate & store user info in login, registration & profile forms.</p>
 					<a href="https://event-crunch.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 			<div class="dark-purple column">
 				<div id="weather-proj" class="my-column">
 					<h3>Change the Weather</h3>
-					<p class="projects">In order to better understand <span class="bold">CSS animations</span>, I designed a fun, weather-themed side project.</p>
+					<p class="projects">In order to better understand <b>CSS animations</b>, I designed a fun, weather-themed side project.</p>
 					<a href="css-animations/sun.html"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 		</div>
 	
-		<div class="ui my-green grid">
+		<div class="ui my-yellow grid">
 			<div class="column"><span id="start-links"></span>
 				<div class="my-info-column">
 					<h3 id="more-info">More Info</h3>
