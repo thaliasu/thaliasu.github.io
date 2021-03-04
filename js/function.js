@@ -41,23 +41,23 @@ $(document).ready(function() {
 	//Show and hide mobile nav
 	$("#nav-btn").click(function(){
 		$("nav").toggleClass("mobileIsActive");
+
+		//if mobile menu is expanded, set aria-expanded to true
+		if($("nav").hasClass("mobileIsActive")){
+			this.setAttribute('aria-expanded', 'true');
+		} else {
+			this.setAttribute('aria-expanded', 'false');
+		}
 	});
 
-
-	//Show active link on click -- this experimental code doesn't work
-	// var linkClicked;
-	// $("#0").click(function(){
-	// 	linkClicked = 0;
-	// });
-	// $("#1").click(function(){
-	// 	linkClicked = 1;
-	// 	$('li').removeClass();
-	// 	$(this).addClass('active');
-	// });
-	// $("#2").click(function(){
-	// 	linkClicked = 2;
-	// });
-
+	//Prevent scrolling when menu modal is shown
+	if($("nav").hasClass("mobileIsActive")){
+		// When the modal is shown, we want a fixed body
+		document.body.style.position = 'fixed';
+	} else {
+		// When the modal is hidden...
+		document.body.style.position = 'block';
+	}
 
 	//Controls active li class in nav
 	$(window).scroll(function(){
