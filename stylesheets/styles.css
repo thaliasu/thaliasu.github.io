@@ -525,7 +525,7 @@ nav.mobileIsActive #x-icon {
 }
 
 .footer .ui.button:hover #email, .footer .ui.button:hover #email-link, .footer .ui.button:hover #linkedin, .footer .ui.button:hover #linkedin-link, .footer .ui.button:hover #github, .footer .ui.button:hover #github-link {
-  color: #310F31;
+  color: #310F31 !important;
 }
 
 .footer .i.icon {
