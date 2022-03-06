@@ -462,20 +462,34 @@ nav.mobileIsActive {
 	padding: 0px 70px 20px 70px;
 
 	@media only screen and (max-width: 1500px) and (min-width: 768px) {
-		padding: 0% 2% 2% 2%;
+		padding: 3%;
 	}
 
 	@media only screen and (max-width: 767px) {
 		/*padding: 0px 25px 20px 25px;*/
-		padding: 0% 6.5% 20% 6.5%; /*20 -> 3% without toast*/
+		padding: 20% 6.5%; /*20 -> 3% without toast*/
 	}
 }
 
 .footer {
 	background-color: $light-purple;
-	// color: $dark-purple;
+
 	.ui.button {
 		padding: 0.78571429em !important;
+
+		&:hover {
+			#email, #email-link, #linkedin, #linkedin-link, #github, #github-link {
+				color: $dark-purple;
+			}
+		}
+	}
+
+	.i.icon {
+		margin: 0 !important;
+	}
+
+	#copyright {
+		padding-bottom: 3%;
 	}
 }
 

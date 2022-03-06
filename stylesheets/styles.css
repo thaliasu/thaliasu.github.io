@@ -516,14 +516,14 @@ nav.mobileIsActive #x-icon {
 
 @media only screen and (max-width: 1500px) and (min-width: 768px) {
   .my-info-column {
-    padding: 0% 2% 2% 2%;
+    padding: 3%;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .my-info-column {
     /*padding: 0px 25px 20px 25px;*/
-    padding: 0% 6.5% 20% 6.5%;
+    padding: 20% 6.5%;
     /*20 -> 3% without toast*/
   }
 }
@@ -534,6 +534,18 @@ nav.mobileIsActive #x-icon {
 
 .footer .ui.button {
   padding: 0.78571429em !important;
+}
+
+.footer .ui.button:hover #email, .footer .ui.button:hover #email-link, .footer .ui.button:hover #linkedin, .footer .ui.button:hover #linkedin-link, .footer .ui.button:hover #github, .footer .ui.button:hover #github-link {
+  color: #310F31;
+}
+
+.footer .i.icon {
+  margin: 0 !important;
+}
+
+.footer #copyright {
+  padding-bottom: 3%;
 }
 
 /*END MORE INFO*/
