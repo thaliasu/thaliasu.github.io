@@ -511,25 +511,13 @@ nav.mobileIsActive #x-icon {
 /*END PORTFOLIO*/
 /*MORE INFO*/
 .my-info-column {
-  padding: 0px 70px 20px 70px;
-}
-
-@media only screen and (max-width: 1500px) and (min-width: 768px) {
-  .my-info-column {
-    padding: 3%;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .my-info-column {
-    /*padding: 0px 25px 20px 25px;*/
-    padding: 20% 6.5%;
-    /*20 -> 3% without toast*/
-  }
+  padding: 3%;
+  /*padding: 0px 25px 20px 25px;*/
 }
 
 .footer {
   background-color: #9A5FAB;
+  margin-bottom: 3%;
 }
 
 .footer .ui.button {
@@ -542,10 +530,6 @@ nav.mobileIsActive #x-icon {
 
 .footer .i.icon {
   margin: 0 !important;
-}
-
-.footer #copyright {
-  padding-bottom: 3%;
 }
 
 /*END MORE INFO*/
