@@ -459,37 +459,35 @@ nav.mobileIsActive {
 
 /*MORE INFO*/
 .my-info-column {
-	padding: 0px 70px 20px 70px;
+	padding: 3% 3% 0% 3%;
+	// padding: 0px 70px 20px 70px;
 
-	@media only screen and (max-width: 1500px) and (min-width: 768px) {
-		padding: 3%;
-	}
+	// @media only screen and (max-width: 1500px) and (min-width: 768px) {
+	// 	padding: 3%;
+	// }
 
-	@media only screen and (max-width: 767px) {
+	// @media only screen and (max-width: 767px) {
 		/*padding: 0px 25px 20px 25px;*/
-		padding: 20% 6.5%; /*20 -> 3% without toast*/
-	}
+		// padding: 20% 6.5%; /*20 -> 3% without toast*/
+	// }
 }
 
 .footer {
 	background-color: $light-purple;
+	margin-bottom: 1%;
 
 	.ui.button {
 		padding: 0.78571429em !important;
 
 		&:hover {
 			#email, #email-link, #linkedin, #linkedin-link, #github, #github-link {
-				color: $dark-purple;
+				color: $dark-purple !important;
 			}
 		}
 	}
 
-	.i.icon {
+	.icon {
 		margin: 0 !important;
-	}
-
-	#copyright {
-		padding-bottom: 3%;
 	}
 }
 
