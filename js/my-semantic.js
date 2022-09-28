@@ -1,6 +1,6 @@
 $('.ui.accordion')
     .accordion({
-  	  exclusive: false
+  	  exclusive: true //change to false if you want user to able to keep multiple open at once
     });
     
 $('.ui.sticky')

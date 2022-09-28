@@ -30,7 +30,7 @@
 				<svg id="hamburger-icon" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#FFF"/></svg>
 				<svg id="x-icon" height="24" viewBox="0 0 24 24" width="24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#FFF"/><path d="M0 0h24v24H0z" fill="none"/></svg>
 			</button>
-			<ul role="menubar">
+			<ul id="nav-list" role="menubar">
 				<li role="menuitem" id="0" class="active"><a id="welcome-link" class="nav-link">Welcome</a></li>
 				<li role="menuitem" id="1"><a class="nav-link" href="#main">About</a></li>
 				<li role="menuitem" id="2"><a class="nav-link" href="#portfolio">Portfolio</a></li>
@@ -60,39 +60,59 @@
 	</div>
 
 	<!-- Temporary toast message for maintainence -->
-	<!-- <div role="alert" class="message">I'm making some changes around here. New content is coming very soon!</div>  -->
+	<div role="alert" class="message">I'm making some changes around here. New content is coming very soon!</div> 
 
 	<!--BEGIN ABOUT & MAIN-->
 	<main id="main">
-		<div class="ui stackable two column grid flex">
-			<div class="column flex">
-				<h2 class="vertical-text">About</h2>
-				<div class="intro-pic-column">
-					<img id="thalia" src="imgs/thalia.png" alt="Thalia Su">
+		<div class="ui stackable relaxed grid">
+			<div class="row intro-row">
+				<div class="column">
+					<h2>About</h2>
 				</div>
 			</div>
-			<div class="column flex intro-column">
-				<div class="row">
-					<h3>Bio</h3>
-					<p id="intro">Nice to e-meet you, I'm Thalia (she/her), a UX designer with specialization in interaction design. I graduated from the University of Central Florida with degrees in Web Design and Creative Writing in 2018. I enjoy working with other creative and inquisitive individuals. Everyday, I strive to advocate for users and improve the world through UX Design.<br><br>
+			<div class="row intro-row">
+				<div class="six wide column">
+					<img id="thalia" src="imgs/thalia.png" alt="Thalia Su">
+				</div>
+				<div class="ten wide column">
+					<div class="row">
+						<h3>Bio</h3>
+						<p>I am a UI/UX designer who crafts pleasant cross-platform user experiences using Figma. My work style is team-oriented: I rely on feedback from other creative and inquisitive individuals to improve products.
+							<br><br>I also invest significant time into thoroughly considering different use cases and maintaining consistency and quality through details. Everyday, I strive to advocate for users and improve the world through UX design.</p>
+						<br>
+					</div>
+					<!-- <div class="row">
+						<h4>Likes:</h4><br>
+							<ul class="ul-bio">
+								<li><p>Automating routine tasks</p>
+									<ul class="ul-bio">
+										<li><p>i.e., setting Work and Home on Google Maps or "Play Next Episode" feature on Netflix</p></li>
+									</ul>
+								</li>
+								<li><p>Relevant and robust search tags</p>
+									<ul class="ul-bio">
+										<li><p>i.e., Airbnb's filters for types of stays</p></li>
+									</ul>
+								</li>
+								<li><p>Gamification</p>
+									<ul class="ul-bio">
+										<li><p>i.e., badges that show lesson progress in language apps</p></li>
+									</ul>
+								</li>
+							</ul>
+						<h4>Dislikes:</h4><br>
+							<ul>
+								<li>Not being able to easily find the Delete Account button</li>
+								<li>Frustrating website/app navigation</li>
+								<li>Long sign up processes</li>
+							</ul>
+					</div> -->
 				</div>
 			</div>
 		</div>
 		<div class="spacing"></div>
 
-		<div class="ui stackable two column grid">
-			<div class="mid-purple six wide column">
-				<!--my-column adds padding-->
-				<div class="my-column">
-					<h3>Skills</h3>
-					<p id="skills">
-						<b>Languages</b><br>HTML, CSS, JavaScript, jQuery, PHP, SQL<br><br>
-						<b>Frameworks</b><br>Materialize, Semantic UI, Angular<br><br>
-						<b>Design Tools</b><br>Adobe XD, Photoshop, Lightroom, Illustrator, InDesign, Figma, InVision, Miro<br><br>
-						<b>Misc</b><br>SASS, Git, Sourcetree, Unity, Anime.js, WordPress, UserTesting.com, Asana, DevOps<br>
-					</p>
-				</div>
-			</div>
+		<div class="ui stackable grid">
 			<div class="dark-purple ten wide column">
 				<div class="my-column">
 					<h3>History</h3>
@@ -103,7 +123,7 @@
 								UX Designer, VIDAA USA<i class="my-rotate plus icon"></i>
 							</div>
 							<div class="content">
-								<span class="h-bold">June '21 - Now</span><br>
+								<span class="h-bold">June '21 - Aug '22</span><br>
 								Contributed to foundational design systems, created designs & prototypes for mobile and TV products, wrote & edited UX copy, & conducted remote user testing. Responsible for UX design & information architecture of VIDAA mobile app.
 							</div>
 							<div class="title">
@@ -168,31 +188,73 @@
 					</div>
 				</div>
 			</div>
+			<div class="mid-purple six wide column">
+				<!--my-column adds padding-->
+				<div class="my-column">
+					<h3>Skills</h3>
+					<div id="skills">
+						<!--Bar 100% width is filling whole class align-to-center instead of taking text space into account-->
+						<div class="align-to-center">
+							<p class="skill-text two wide column">Adobe XD</p><img class="bar four wide column" src="imgs\skills\xd.png" alt="Adobe XD proficiency 95%">
+						</div>
+						<div class="align-to-center">
+							<p class="skill-text">Figma</p><img class="bar" src="imgs\skills\figma.png" alt="Figma proficiency 90%">
+						</div>
+						<div class="align-to-center">
+							<p class="skill-text">Miro</p><img class="bar" src="imgs\skills\miro.png" alt="Miro proficiency 80%">
+						</div><br>
+						<!-- <div class="align-to-center">
+							<p class="skill-text">Invision</p><img class="bar" src="imgs\skills\invision.png" alt="Invision proficiency 65%">
+						</div><br> -->
+
+						<div class="align-to-center">
+							<p class="skill-text">Photoshop</p><img class="bar" src="imgs\skills\photoshop.png" alt="Photoshop proficiency 80%">
+						</div>
+						<div class="align-to-center">
+							<p class="skill-text">Illustrator</p><img class="bar" src="imgs\skills\illustrator.png" alt="Illustrator proficiency 75%">
+						</div><br>
+
+						<div class="align-to-center">
+							<p class="skill-text">HTML</p><img class="bar" src="imgs\skills\html.png" alt="HTML proficiency 90%">
+						</div>
+						<div class="align-to-center">
+							<p class="skill-text">CSS/SASS</p><img class="bar" src="imgs\skills\css.png" alt="CSS and SASS proficiency 85%">
+						</div>
+						<!-- Wordpress<br> -->
+						<!-- <div class="align-to-center">
+							<p class="skill-text">Git</p><img class="bar" src="imgs\skills\git.png" alt="Git proficiency 35%">
+						</div> -->
+						<div class="align-to-center">
+							<p class="skill-text">JS/jQuery</p><img class="bar" src="imgs\skills\js.png" alt="Javascript and jQuery proficiency 40%">
+						</div><br>
+						<!-- Unity<br> -->
+						<!-- Angular<br><br> -->
+					</div>
+				</div>
+			</div>
 		</div> <!-- END OF ABOUT -->
 
 	<!-- BEGIN PORTFOLIO -->
 	<div id="portfolio">
-		<div class="ui stackable two column grid">
-			<div class="column flex">
-				<h2 class="vertical-text">Portfolio</h2>
-				<div class="intro-pic-column">
+		<div class="ui stackable relaxed two column grid">
+			<div class="row">
+				<div class="column"><h2>Portfolio</h2></div>
+			</div>
+			<div class="row">
+				<div class="column intro-pic-column">
 					<img id="ipad" src="imgs/di-small.png" alt="iPad displaying user interface of user profile for IMITATE."/>
 				</div>
-			</div>
-			<div class="column flex align-self">
-				<div class="row">
-					<div class="intro-column">
-						<h3>Design Interactive</h3>
-						<p class="projects">As the primary <b>UX Designer</b> for the Performance Augmentation team at DI, I worked extensively on a couple projects, one that focused on effective skill acquisition, and another that sought to assist users with navigation.</p>
-
-						<a href="docs/thalia-su-di-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Projects</button></a>
-					</div>
+				<div class="column intro-column">
+					<h3>IMITATE</h3>
+					<p class="projects">As the primary <b>UX Designer</b> for the Performance Augmentation team at Design Interactive, I worked extensively on IMITATE, a web app that promoted effective skill acquisition.</p>
+	
+					<a href="docs/thalia-su-di-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 		</div>
 		<div class="half-spacing"></div>
 
-		<div class="ui stackable two column grid">
+		<!--div class="ui stackable two column grid">
 			<div class="ten wide column dark-purple">
 				<div class="my-column">
 					<h3>Sparks Magazine</h3>
@@ -208,7 +270,7 @@
 					<a href="docs/fencing-branding.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
-		</div>
+		</div-->
 
 		<!-- <div class="ui stackable three column grid">
 			<div class="column">
@@ -239,13 +301,13 @@
 			<div class="ui centered row">
 				<div class="my-info-column">
 					<!-- <div class="ui centered column"> -->
-						<button class="ui massive inverted button">
+						<button id="button-email" class="ui huge inverted icon button">
 							<a href="mailto:thaliawithath@gmail.com?Subject=Portfolio%20Query" rel="noopener noreferrer"><i id="email" class="large envelope icon"></i><span class="sr-only">Email</span></a>
 						</button>
-						<button class="ui massive inverted button">
+						<button id="button-github" class="ui huge inverted icon button">
 							<a href="https://github.com/thaliasu" target="_blank" rel="noopener noreferrer"><i id="github" class="large github square icon"></i><span class="sr-only">GitHub</span></a>
 						</button>
-						<button class="ui massive inverted button">
+						<button class="ui huge inverted icon button">
 							<a href="https://linkedin.com/in/thalia-su" target="_blank" rel="noopener noreferrer"><i id="linkedin" class="large linkedin icon"></i><span class="sr-only">LinkedIn</span></a>
 						</button>
 					<!-- </div> -->

@@ -45,19 +45,25 @@ h1 {
 
 h2 {
 	font-family: 'jaapokki', 'Montserrat', sans-serif;
-	font-size: 72px;
+	font-size: 4.5rem;
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
 
 h3 {
-	font-size: 48px;
+	font-size: 3rem;
 	word-wrap: break-word; /*in case font overflows container*/
 }
 
 h4 {
-	font-size: 36px;
+	font-size: 2.25rem;
 	margin-top: 0;
+}
+
+p {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	// line-height: initial;
 }
 
 button:hover {
@@ -71,9 +77,9 @@ i{
 	color: #FFF;
 }
 
-.flex {
-	display: flex !important;
-}
+// .flex {
+// 	display: flex !important; //commands semantic ui to follow flex rules
+// }
 
 ::selection {
 	color: #FFF;
@@ -120,8 +126,8 @@ i{
     position: fixed;
     bottom: 0;
     z-index: 99;
-    padding: 10px;
-    font-size: 18.66px;
+    padding: .75rem;
+    font-size: 1rem;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -150,12 +156,6 @@ nav {
 
 	@media only screen and (max-width: 632px) {
 		display: block;
-		/*display: flex;
-		align-items: center;
-		font-size:36px;
-		font-family: inherit;
-		font-weight: bold;
-		color: inherit;*/
 
 	    background: transparent;
     	border: none;
@@ -164,14 +164,12 @@ nav {
 	}
 }
 
-#hamburger-icon {
-	width: 60px;
-	height: 60px;
+#hamburger-icon, #x-icon {
+	width: 3.75rem;
+	height: 3.75rem;
 }
 
 #x-icon {
-	width: 60px;
-	height: 60px;
 	display: none;
 }
 
@@ -331,7 +329,7 @@ nav.mobileIsActive {
 }
 
 #scroll-icon {
-	width: 60px;
+	width: 3.75rem;
 	.cls-1{
 		fill: transparent;
 		transition: fill .25s ease-in-out;
@@ -346,12 +344,16 @@ nav.mobileIsActive {
 
 /*BELOW SPLASH PAGE INTRO SECTION*/
 #thalia, #ipad {
-	width: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
-#intro {
-	font-size: 24px;
-	line-height: initial;
+#thalia {
+	width: 90%;
+}
+
+#ipad {
+	width: 60%;
 }
 
 .intro-column {
@@ -359,37 +361,47 @@ nav.mobileIsActive {
 	align-self: center;
 }
 
-.intro-pic-column {
+.intro-row {
 	/*Aligns top of pic to top of text*/
-	padding: 2% 5% 0% 5%;
+	padding: 0rem 1rem !important;
 	margin: auto;
 }
+
+// .ul-bio{
+// 	list-style-type: disc !important;
+// 	display: block;
+// 	transition: none;
+// 	margin: 0%;
+// 	padding-inline-start: 40px;
+
+// 	li{
+// 		width:100%;
+// 		cursor:auto;
+// 		display: block;
+// 	}
+// }
 /*END INTRO SECTION*/
 
-/*ACTUAL PORTFOLIO BEGINS*/
+/*MAIN BEGINS*/
 #main {
-	padding-top: 100px;
+	padding-top: 4.5rem;
 	position: relative;
 	top: 100%;
 	width: 100%;
 	background-color: $light-purple;
 }
 
-#portfolio {
-	margin-top: 50px;
-}
-
-.spacing {
-	margin-top: 100px;
+.spacing, #portfolio {
+	margin-top: 4.5rem;
 }
 
 .half-spacing {
-	margin-top: 50px;
+	margin-top: 2.25rem;
 }
 
-.align-self {
-	align-self: center;
-}
+// .align-self {
+// 	align-self: center; //commands semantic ui to follow flex align-self...like div class="column flex align-self"
+// }
 
 #skills, #history, .projects, .title {
 	font-size: 24px !important;
@@ -420,67 +432,55 @@ nav.mobileIsActive {
 	font-weight: 550;
 }
 
-/*#changing-purple {
-	background-color: $dark-purple;
-	@media only screen and (max-width: 767px) {
-		background-color: $mid-purple;
-	}
-}*/
-
 .my-column {
-	padding: 40px 70px 50px 70px;
+	padding: 0rem 1rem;
+	// padding: 40px 70px 50px 70px;
 
-	@media only screen and (max-width: 1500px) and (min-width: 768px) {
-		padding: 0% 8% 3% 8%;
-	}
+	// @media only screen and (max-width: 1500px) and (min-width: 768px) {
+	// 	padding: 0% 8% 3% 8%;
+	// }
 
-	@media only screen and (max-width: 767px) {
-		/*padding: 0px 25px 20px 25px;*/
-		padding: 0% 5% 3% 5%;
-	}
+	// @media only screen and (max-width: 767px) {
+	// 	/*padding: 0px 25px 20px 25px;*/
+	// 	padding: 0% 5% 3% 5%;
+	// }
 }
 
-/*#sparks-changing-purple {
-	background-color: $mid-purple;
+//Reactivate below css when you figure out how to subtract text length
+.skill-text {
+	padding-right: 1rem;
+	margin: 0 0 .33rem 0;
+	// width: 10%;
+}
 
-	@media only screen and (max-width: 767px) {
-		background-color: $dark-purple;
-	}
-}*/
+.align-to-center {
+	// display: flex;
+	// align-items: center;
+	margin: 1rem 0;
+}
 
-/*#tba-changing-purple {
-	background-color: $dark-purple;
-	@media only screen and (max-width: 767px) {
-		background-color: $mid-purple;
-	}
-}*/
+.bar {
+	width: 80%;
+	max-height: 1.5rem;
+}
+
+.projects {
+	margin-bottom: 1rem;
+}
 
 /*END PORTFOLIO*/
 
 /*MORE INFO*/
-.my-info-column {
-	padding: 3% 3% 0% 3%;
-	// padding: 0px 70px 20px 70px;
-
-	// @media only screen and (max-width: 1500px) and (min-width: 768px) {
-	// 	padding: 3%;
-	// }
-
-	// @media only screen and (max-width: 767px) {
-		/*padding: 0px 25px 20px 25px;*/
-		// padding: 20% 6.5%; /*20 -> 3% without toast*/
-	// }
-}
-
 .footer {
 	background-color: $light-purple;
 	margin-bottom: 1%;
 
 	.ui.button {
-		padding: 0.78571429em !important;
+		// padding: 0.78571429em !important;
+		font-family: Montserrat, sans-serif !important;
 
 		&:hover {
-			#email, #email-link, #linkedin, #linkedin-link, #github, #github-link {
+			#email, #linkedin, #github {
 				color: $dark-purple !important;
 			}
 		}
@@ -491,22 +491,13 @@ nav.mobileIsActive {
 	}
 }
 
-// .info-wrapper{
-// 	margin-left: auto;
-// 	margin-right: auto;
+#button-email {
+	margin-right: .5rem !important;
+}
 
-// 	i, #email, #email-link, #linkedin, #linkedin-link, #github, #github-link {
-// 		color: $dark-purple;
-// 		/*color: $light-purple;*/
-// 	}
-
-// 	&:hover {
-// 		#email, #email-link, #linkedin, #linkedin-link, #github, #github-link {
-// 			color: $light-purple;
-// 			/*color: $dark-purple;*/
-// 		}
-// 	}
-// }
+#button-github {
+	margin-right: .5rem !important;
+}
 /*END MORE INFO*/
 
 /*404 PAGE*/
@@ -521,6 +512,6 @@ nav.mobileIsActive {
 }
 
 #pnf-h2 {
-	margin-top: 0px;
-	margin-bottom: 28px;
+	margin-top: 0;
+	margin-bottom: 1.75rem;
 }

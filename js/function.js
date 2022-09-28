@@ -89,9 +89,9 @@ $(document).ready(function() {
 		// if(windowTop >= aboutTop) {
 		// if(windowTop > passWelcome) {
 		if( (windowTop >= aboutTop-144) && ($(window).width() > 632) ) {
-			$('ul').addClass('shrink-nav');
+			$('#nav-list').addClass('shrink-nav');
 		} else {
-			$('ul').removeClass();
+			$('#nav-list').removeClass();
 		}
 	})
 });
