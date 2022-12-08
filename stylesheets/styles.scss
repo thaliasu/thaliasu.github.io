@@ -343,7 +343,7 @@ nav.mobileIsActive {
 /*END TS ANIMATION & SCROLL DOWN*/
 
 /*BELOW SPLASH PAGE INTRO SECTION*/
-#thalia, #ipad {
+#thalia, .portfolio-pic {
 	display: block;
 	margin: 0 auto;
 }
@@ -352,8 +352,12 @@ nav.mobileIsActive {
 	width: 90%;
 }
 
-#ipad {
-	width: 60%;
+#di-pic {
+	width: 70%;
+}
+
+#vidaa-app-pic {
+	width: 35%;
 }
 
 .intro-column {
@@ -460,8 +464,8 @@ nav.mobileIsActive {
 }
 
 .bar {
-	width: 80%;
-	max-height: 1.5rem;
+	width: 100%;
+	max-height: 1.25rem;
 }
 
 .projects {
