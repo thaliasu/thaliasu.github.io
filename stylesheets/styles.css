@@ -479,6 +479,29 @@ nav.mobileIsActive #x-icon {
   max-height: 1.25rem;
 }
 
+.media-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  /* overflow: hidden; */
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.video {
+  padding: 0 1rem;
+  width: 90%;
+  min-height: 20rem;
+}
+
+@media screen and (max-width: 767px) {
+  .video {
+    min-height: 12rem;
+  }
+}
+
 .projects {
   margin-bottom: 1rem;
 }

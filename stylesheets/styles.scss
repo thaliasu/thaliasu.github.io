@@ -468,6 +468,22 @@ nav.mobileIsActive {
 	max-height: 1.25rem;
 }
 
+.media-wrapper {
+	display: flex !important;
+    /* overflow: hidden; */
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.video {
+	padding: 0 1rem;
+    width: 90%;
+    min-height: 20rem;
+	@media screen and (max-width: 767px) {
+		min-height: 12rem;
+	}
+}
+
 .projects {
 	margin-bottom: 1rem;
 }
