@@ -37,6 +37,13 @@ a {
 }
 
 h1 {
+	font-family: 'jaapokki', 'Montserrat', sans-serif;
+	font-size: 6rem;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+#home-h1 {
 	/*screen reader text*/
 	position: absolute;
   	top: -9999px;
@@ -67,7 +74,7 @@ p {
 }
 
 button:hover {
-	a {
+	a, .icon {
 		color: $dark-purple;
 	}
 }
@@ -116,6 +123,11 @@ i{
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+.ui.relaxed.grid > .column:not(.row), .ui.relaxed.grid > .row > .column, .ui.grid > .relaxed.row > .column {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
 /*END GLOBAL*/
 
 /*Toast Message*/
@@ -126,9 +138,9 @@ i{
     position: fixed;
     bottom: 0;
     z-index: 99;
-    padding: .75rem;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: semibold;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,10 +362,17 @@ nav.mobileIsActive {
 
 #thalia {
 	width: 90%;
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 #di-pic {
-	width: 70%;
+	width: 55%;
+
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 #vidaa-app-pic {
@@ -407,8 +426,8 @@ nav.mobileIsActive {
 // 	align-self: center; //commands semantic ui to follow flex align-self...like div class="column flex align-self"
 // }
 
-#skills, #history, .projects, .title {
-	font-size: 24px !important;
+#skills, #experience, .title {
+	font-size: 24px !important; //used to be 24px
 	color: #FFF !important;
 	font-family: Montserrat, sans-serif !important;
 }
@@ -473,6 +492,7 @@ nav.mobileIsActive {
     /* overflow: hidden; */
     align-content: center;
     flex-wrap: wrap;
+	justify-content: center;
 }
 
 .video {
@@ -481,19 +501,25 @@ nav.mobileIsActive {
     min-height: 20rem;
 	@media screen and (max-width: 767px) {
 		min-height: 12rem;
+		padding: 0;
+		width: 100%;
 	}
 }
 
-.projects {
+.project-text, #button-imi-ux {
 	margin-bottom: 1rem;
+}
+
+#button-imi-ux {
+	margin-right: 1rem;
 }
 
 /*END PORTFOLIO*/
 
 /*MORE INFO*/
 .footer {
-	background-color: $light-purple;
-	margin-bottom: 1%;
+	// background-color: $light-purple;
+	// margin-bottom: 1rem !important;
 
 	.ui.button {
 		// padding: 0.78571429em !important;
@@ -508,6 +534,10 @@ nav.mobileIsActive {
 
 	.icon {
 		margin: 0 !important;
+	}
+
+	.copyright {
+		background-color: $pink;
 	}
 }
 

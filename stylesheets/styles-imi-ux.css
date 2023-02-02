@@ -1,0 +1,107 @@
+/*png formatting*/
+body {
+  background-image: url("/imgs/imitate/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#mockup-imi, #rs-old, #rs-old-mobile, .tree, #rs-new {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 767px) {
+  #mockup-imi, #rs-old, #rs-old-mobile, .tree, #rs-new {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #rs-old-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #rs-old {
+    display: none;
+  }
+}
+
+.tree-third {
+  padding: 0 1rem 1rem 1rem;
+  width: 27%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media screen and (max-width: 767px) {
+  .tree-third {
+    width: 100%;
+    padding-top: 1rem;
+  }
+}
+
+/*other page formatting*/
+.imi-title {
+  text-align: center;
+}
+
+.section-wrapper-intro {
+  background: #5C3666;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.section-wrapper-progress {
+  background: #9A5FAB;
+  border-radius: 20px;
+  border: 4px solid #5C3666;
+  margin: 1.5rem 6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .section-wrapper-progress {
+    margin: 1.5rem;
+  }
+}
+
+.ui.grid > * {
+  padding: 2rem;
+}
+
+.ui.label {
+  border-radius: 30px;
+  margin-bottom: .5rem;
+}
+
+figure {
+  margin: 1em 20px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 16px;
+}
+
+desc {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+#walkthru-imi {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  #walkthru-imi {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles-imi-ux.css.map */

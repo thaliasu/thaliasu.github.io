@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <title>Thalia Su Portfolio | Experienced UX Designer</title> -->
+
+	<link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
+	<link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/styles-imi-ux.css">
+	<link rel="icon" href="imgs/favicon.png" type="image/x-icon">
+
+	<!-- <script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script> -->
+	<script src="semantic-ui/semantic.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="ui grid">
+            <div class="column">
+                <button class="ui large inverted left icon button">
+                    <a href="https://thaliasu.github.io">
+                        <i class="left arrow icon"></i>
+                        Back
+                    </a>
+                </button>
+            </div>
+        </div>
+        
+        <div class="ui stackable relaxed grid">
+            <div class="row">
+                <div class="column">
+                    <h1 class="imi-title">IMITATE UX</h1>
+                    <div class="media-wrapper">
+                        <img id="mockup-imi" src="/imgs/imitate/mockup-imi.png" alt="IMITATE on iPad">
+                    </div>
+    
+                    <div class="section-wrapper-intro">
+                        <h2>Intro</h2>
+                        <p>IMITATE is a video-based mobile communication platform that accelerates acquisition of skills like public speaking, sales and interpersonal communication.
+                            It uses rating systems to rate learners' performance. Rating systems are composed of KPAs, behaviors, and anchors.<br><br>
+                            But before anyone can use a rating system, someone has to create it.
+                            I was tasked with improving the UX for authoring rating systems.
+                        </p>
+                        <h3>Role</h3>
+                        <div class="ui large label">
+                            UX designer
+                        </div>
+                        <div class="ui large disabled label">
+                            Project owner
+                        </div>
+                        <div class="ui large disabled label">
+                            Project manager
+                        </div>
+                        <div class="ui large disabled label">
+                            Business Analyst
+                        </div>
+                        <div class="ui large disabled label">
+                            Research Associate
+                        </div>
+                        <div class="ui large disabled label">
+                            Developer (x2)
+                        </div>
+                        <h3>Skills</h3>
+                        <div class="ui large label">
+                            Adobe XD
+                        </div>
+                        <div class="ui large label">
+                            HTML
+                        </div>
+                        <div class="ui large label">
+                            CSS/SASS
+                        </div>
+                        <div class="ui large label">
+                            Angular
+                        </div>
+                        <div class="ui large label">
+                            Miro
+                        </div>
+                        <h3>Developed For</h3>
+                        <div class="ui large label">
+                            iPad
+                        </div>
+                        <div class="ui large label">
+                            Desktop
+                        </div>
+                    </div> <!--End of section wrapper-->
+                </div> <!--End of column-->
+            </div> <!--End of row-->
+            
+            <div class="section-wrapper-progress">
+                <div class="row">
+                    <div class="sixteen wide column">
+                        <!-- <div class="section-wrapper-top"> -->
+                            <h2 id="h2-authoring">Process</h2>
+                            <h3>Background</h3>
+                            <p>KPAs are a criteria with multiple characteristics (behaviors), which can be rated on a scale of 1-5.</p>
+                        <!-- </div> -->
+                    </div>
+
+                    
+                    <div class="ui grid"> <!--Remove doubled relaxed grid padding-->
+                        <div class="eight wide computer sixteen wide mobile column">
+                            <figure>
+                                <div class="media-wrapper">
+                                    <img class="tree" src="/imgs/imitate/tree-default.png" alt="KPAs have behaviors and behaviors have definitions."><br>
+                                </div>
+                                <figcaption>Hierarchy for how rating system is organized.</figcaption>
+                            </figure>
+                        </div>
+        
+                        <div class="eight wide computer sixteen wide mobile column">
+                            <figure>
+                                <div class="media-wrapper">
+                                    <img class="tree" src="/imgs/imitate/tree-swimming.png">
+                                </div>
+                                <desc>The KPA is 'Swimming Stamina'. The behavior is 'Maintains good form for long periods of time'. The anchors are a scale of 1-5 rating how much the behavior is met.</desc>
+                                <figcaption>Example for how rating system tree is filled out.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <div class="sixteen wide column">
+                        <h3>Brainstorming</h3>
+                        <p>IMITATE already had a well-deﬁned style that I could work from. I reused components like buttons and cards for the Manage Rating Systems list.
+                            The original design I inherited came with a card (left side) and form (right side).
+                        </p>
+                        <div class="media-wrapper">
+                            <img id="rs-old" src="/imgs/imitate/rs-old.png" alt="keyword tree on left with place to type input on right">
+                            <img id="rs-old-mobile" src="/imgs/imitate/rs-old-mobile.png" alt="keyword tree on left with place to type input on right">
+                        </div>
+        
+                        <p>Changes I wanted to make:</p>
+                    </div>
+                    
+                    <div class="eight wide stackable column">
+                        <p>
+                            1.) Add a database drawing definitions from existing rating systems so the user wouldn't have to create KPAs/behaviors/anchors from scratch every time.<br><br>
+                            2.) Be able to interact directly with card because affordance implied it was interactive. At the time, users could only select a KPA or behavior rectangle but not type into it.
+                        </p>
+                    </div>
+                    
+                    <div class="eight wide stackable column">
+                        <p>
+                            3.) Allow autocomplete when typing into the card. Have database results adapt as user was typing into form.<br><br>
+                            4.) Make form collapsible so space could be freed up.
+                        </p>
+                    </div>   
+                </div> <!--End of row-->
+                        
+                <div class="row">
+                    <div class="sixteen wide column">
+                        <h3>Roadblock</h3>
+                        <figure>
+                            <div class="media-wrapper">
+                                <img class="tree-third" src="/imgs/imitate/tree-default.png" alt="">
+                                <img class="tree-third" src="/imgs/imitate/tree-swimming-2.png" alt="">
+                                <img class="tree-third" src="/imgs/imitate/tree-swimming-3.png" alt=""><br>
+                            </div>
+                                <figcaption>Illustration of various outcomes for the same KPA under project manager's request.</figcaption>
+                            </figure>
+
+                        <p>A major challenge was defining how everything in the tree structure would connect.
+                            The project manager requested that we allow users to cherry-pick KPAs, behaviors, and anchors and decide the number of each. This would allow countless mixing-and-matching combinations.                        
+                            From a UX perspective, burdening the user with too many decisions would not be conducive to a pleasant app experience. I proposed chunking information to simplify the process for users. <br><br>
+        
+                            After speaking to my teammates, I learned this was an issue on the research and development side too. 
+                            From the RA's perspective, anchors would not make sense out-of-context from their behaviors (because they are a rating scale deﬁned in relation to their behavior). 
+                            From the devs' perspective, the numerous combinations create a mess in the database. Moreover, pre-existing tables tied behaviors and anchors together and would take signiﬁcant technical effort to overhaul.  
+                            Our collective concerns led the team to a compromise: Behaviors and anchors must always be tied together, with the number of anchors staying the same.
+                        </p>
+                    </div>
+                </div>
+                    
+                <div class="row">
+                    <div class="column">
+                        <h3>Hi-Fidelity Prototype</h3>
+                        <div class="media-wrapper">
+                            <!--Add captions-->
+                            <video id="walkthru-imi" src="/imgs/imitate/walkthru-imi.mp4" controls>Your browser does not support the video tag.</video>
+                        </div>
+
+                        <h3>Lessons Learned</h3>
+                        <p>Include developers early in the design process. Learning what is technically feasible prevents the team from wasting time. 
+                            Thanks to some feedback from the Marines who used the BETA, we added the ability to add an existing KPA and its attached set of behaviors in one click (seen below).</p>
+                        <div class="media-wrapper">
+                            <img id="rs-new" src="/imgs/imitate/rating-system-new.png" alt="new and improved rating system">
+                        </div>
+                    </div>
+                </div>
+            </div> <!--End of section wrapper-->
+        </div> <!--End of grid-->
+
+        <!--Could make footer less redundant with php-->
+        <div class="ui footer grid">
+            <div class="ui centered row copyright">
+                <p>Thalia Su Portfolio 2022 &#169</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

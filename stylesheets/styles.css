@@ -29,6 +29,13 @@ a:hover {
 }
 
 h1 {
+  font-family: 'jaapokki', 'Montserrat', sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#home-h1 {
   /*screen reader text*/
   position: absolute;
   top: -9999px;
@@ -58,7 +65,7 @@ p {
   margin-bottom: 0;
 }
 
-button:hover a {
+button:hover a, button:hover .icon {
   color: #310F31;
 }
 
@@ -114,6 +121,11 @@ i {
   border: 0;
 }
 
+.ui.relaxed.grid > .column:not(.row), .ui.relaxed.grid > .row > .column, .ui.grid > .relaxed.row > .column {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 /*END GLOBAL*/
 /*Toast Message*/
 /*toast may be removed once maintainence is done*/
@@ -123,9 +135,9 @@ i {
   position: fixed;
   bottom: 0;
   z-index: 99;
-  padding: .75rem;
-  font-size: 1rem;
-  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: semibold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,8 +397,20 @@ nav.mobileIsActive #x-icon {
   width: 90%;
 }
 
+@media only screen and (max-width: 768px) {
+  #thalia {
+    width: 100%;
+  }
+}
+
 #di-pic {
-  width: 70%;
+  width: 55%;
+}
+
+@media only screen and (max-width: 768px) {
+  #di-pic {
+    width: 100%;
+  }
 }
 
 #vidaa-app-pic {
@@ -424,7 +448,7 @@ nav.mobileIsActive #x-icon {
   margin-top: 2.25rem;
 }
 
-#skills, #history, .projects, .title {
+#skills, #experience, .title {
   font-size: 24px !important;
   color: #FFF !important;
   font-family: Montserrat, sans-serif !important;
@@ -488,6 +512,9 @@ nav.mobileIsActive #x-icon {
       align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .video {
@@ -499,20 +526,21 @@ nav.mobileIsActive #x-icon {
 @media screen and (max-width: 767px) {
   .video {
     min-height: 12rem;
+    padding: 0;
+    width: 100%;
   }
 }
 
-.projects {
+.project-text, #button-imi-ux {
   margin-bottom: 1rem;
+}
+
+#button-imi-ux {
+  margin-right: 1rem;
 }
 
 /*END PORTFOLIO*/
 /*MORE INFO*/
-.footer {
-  background-color: #9A5FAB;
-  margin-bottom: 1%;
-}
-
 .footer .ui.button {
   font-family: Montserrat, sans-serif !important;
 }
@@ -523,6 +551,10 @@ nav.mobileIsActive #x-icon {
 
 .footer .icon {
   margin: 0 !important;
+}
+
+.footer .copyright {
+  background-color: #F63970;
 }
 
 #button-email {

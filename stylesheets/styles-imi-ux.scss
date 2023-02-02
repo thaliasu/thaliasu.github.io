@@ -1,0 +1,130 @@
+/*png formatting*/
+body {
+  background-image: url('/imgs/imitate/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#mockup-imi, #rs-old, #rs-old-mobile, .tree, #rs-new {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+}
+
+#rs-old-mobile {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+#rs-old {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.tree-third {
+  padding: 0 1rem 1rem 1rem;
+  width: 27%;
+  height: max-content;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    padding-top: 1rem;
+  }
+}
+
+/*other page formatting*/
+.imi-title {
+  text-align: center;
+}
+
+.section-wrapper-intro {
+  background: #5C3666; //$mid-purple
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.section-wrapper-progress {
+  background: #9A5FAB; //$light-purple
+  border-radius: 20px;
+  border: 4px solid #5C3666;
+  margin: 1.5rem 6rem;
+
+  @media screen and (max-width: 767px) {
+    margin: 1.5rem;
+  }
+}
+
+// for section-wrapper-progress padding
+.ui.grid > * {
+  padding: 2rem;
+}
+
+// .section-wrapper-top {
+//   background: #5C3666; //$mid-purple
+//   padding: 2rem;
+//   border-radius: 20px 20px 0 0;
+// }
+
+// .section-wrapper-mid {
+//   background: #5C3666; //$mid-purple
+//   padding: 2rem;
+// }
+
+// #h2-authoring {
+//   margin-top: 4rem;
+//   //Only needed if no purple wrapper
+// }
+
+.ui.label {
+  // font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  margin-bottom: .5rem;
+}
+
+figure {
+  margin: 1em 20px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 16px;
+}
+
+desc {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+#walkthru-imi {
+  width: 50%;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+// ul {
+// 	font-size: 1.5rem;
+// 	// display: flex;
+// 	// align-items: center;
+// 	list-style-type: circle;
+//   line-height: normal;
+//   align-items: start;
+// 	// padding-left: 0;
+// 	// transition: margin .25s, font-size .25s, padding .25s;
+// }
+
+// li {
+// 	cursor: default;
+// 	width: 33%;
+//   padding-right: .5rem;
+// }

@@ -37,7 +37,7 @@
 				<li role="menuitem" class="nav-link"><span id="download-resume"><a href="docs/thalia-resume-2022.pdf" target="_blank" rel="noopener noreferrer">Resume</a></span></li>
 			</ul>
 		</nav>
-		<h1>Welcome to Thalia Su's Portfolio</h1>
+		<h1 id="home-h1">Welcome to Thalia Su's Portfolio</h1>
 	</header>
 
 	<div class="wrapper">
@@ -60,11 +60,11 @@
 	</div>
 
 	<!-- Temporary toast message for maintainence -->
-	<div role="alert" class="message">I'm making some changes around here. New content is coming very soon!</div> 
+	<!-- <div role="alert" class="message">I'm making some changes around here. New content is coming very soon!</div> -->
 
 	<!--BEGIN ABOUT & MAIN-->
 	<main id="main">
-		<div class="ui stackable relaxed grid">
+		<div class="ui stackable grid">
 			<div class="row intro-row">
 				<div class="column">
 					<h2>About</h2>
@@ -81,32 +81,6 @@
 							<br><br>I also invest significant time into thoroughly considering different use cases and maintaining consistency and quality through details. Everyday, I strive to advocate for users and improve the world through UX design.</p>
 						<br>
 					</div>
-					<!-- <div class="row">
-						<h4>Likes:</h4><br>
-							<ul class="ul-bio">
-								<li><p>Automating routine tasks</p>
-									<ul class="ul-bio">
-										<li><p>i.e., setting Work and Home on Google Maps or "Play Next Episode" feature on Netflix</p></li>
-									</ul>
-								</li>
-								<li><p>Relevant and robust search tags</p>
-									<ul class="ul-bio">
-										<li><p>i.e., Airbnb's filters for types of stays</p></li>
-									</ul>
-								</li>
-								<li><p>Gamification</p>
-									<ul class="ul-bio">
-										<li><p>i.e., badges that show lesson progress in language apps</p></li>
-									</ul>
-								</li>
-							</ul>
-						<h4>Dislikes:</h4><br>
-							<ul>
-								<li>Not being able to easily find the Delete Account button</li>
-								<li>Frustrating website/app navigation</li>
-								<li>Long sign up processes</li>
-							</ul>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -115,10 +89,10 @@
 		<div class="ui stackable grid">
 			<div class="dark-purple ten wide column">
 				<div class="my-column">
-					<h3>History</h3>
+					<h3>Experience</h3>
 					<h4>Work</h4>
 					<div class="ui accordion">
-						<div id="history">
+						<!-- <div id="experience"> -->
 							<div class="title">
 								UX Designer, VIDAA USA<i class="my-rotate plus icon"></i>
 							</div>
@@ -184,14 +158,14 @@
 								<span class="h-bold">April '15 - Dec '18</span><br>
 								Managed communication & recruitment. Created 1st public TFK Facebook & Instagram, plus social media graphics
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 				</div>
 			</div>
 			<div class="mid-purple six wide column">
 				<div class="my-column">
 					<h3>Tools & Languages</h3>
-					<div id="skills"-->
+					<!-- <div id="skills"-->
 						<!-- Bar 100% width is filling whole class align-to-center instead of taking text space into account -->
 						<div class="align-to-center">
 							<p class="skill-text two wide column">Adobe XD</p><img class="bar four wide column" src="imgs\skills\xd.png" alt="Adobe XD proficiency 95%">
@@ -219,7 +193,7 @@
 						<div class="align-to-center">
 							<p class="skill-text">JS/jQuery</p><img class="bar" src="imgs\skills\js.png" alt="Javascript and jQuery proficiency 40%">
 						</div><br>
-					</div>
+					<!-- </div> -->
 				</div>
 			</div>
 		</div>
@@ -234,89 +208,48 @@
 			<div class="row">
 				<div class="column media-wrapper">
 					<iframe class="portfolio-pic video" src="https://www.youtube.com/embed/TVg-GxT9Jv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!-- <video class="portfolio-pic video" controls>
+						<source src="vids/walkthrough-vidaa.mp4" type="video/mp4">
+					  Your browser does not support the video tag.
+					  </video> -->
 				</div>
-				<div class="column intro-column">
+				<div class="column">
 					<h3>VIDAA App</h3>
-					<p class="projects">At VIDAA, I helped with the redesign of their app, which accompanies their main product, their TV OS.</p>
-					<a href="docs/thalia-su-vidaa-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
+					<p class="project-text">At VIDAA, I helped with the redesign of their app, which accompanies their main product, their TV OS.</p>
+					<a href="docs/thalia-su-vidaa-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Case Study</button></a>
 				</div>
 			</div>
 			<div class="half-spacing"></div>
 			<div class="row">
+				<div class="column"> <!--Add .media-wrapper if 2 links-->
+					<h3>IMITATE</h3>
+					<p class="project-text">As the primary UI/UX Designer for the Performance Augmentation team at Design Interactive, I worked extensively on IMITATE, a web app that promotes effective skill acquisition.</p>
+					<a href="/imitate-ux.html"><button id="button-imi-ux" class="massive ui inverted button">See Case Study</button></a>
+					<!-- <a href="/imitate-gd.html"><button class="massive ui inverted button">See Graphic Design</button></a> -->
+				</div>
 				<div class="column">
 					<img id="di-pic" class="portfolio-pic" src="imgs/di-mock.png" alt="iPad displaying user interface of user profile for IMITATE."/>
-				</div>
-				<div class="column intro-column">
-					<h3>IMITATE</h3>
-					<p class="projects">As the primary UI/UX Designer for the Performance Augmentation team at Design Interactive, I worked extensively on IMITATE, a web app that promotes effective skill acquisition.</p>
-					
-					<a href="docs/thalia-su-di-portfolio.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
 				</div>
 			</div>
 		</div>
 		<div class="half-spacing"></div>
-
-		<!--div class="ui stackable two column grid">
-			<div class="ten wide column dark-purple">
-				<div class="my-column">
-					<h3>Sparks Magazine</h3>
-					<p class="projects">Sparks is an Asian & Pacific Islander American magazine offering students APIA representation and a platform to discuss social issues. For issue no. 14, I designed for <b>print and social media</b> with <b>InDesign</b>.
-					</p>
-				<button class="disabled massive ui inverted button">See Project</button>
-				</div>
-			</div>
-			<div class="six wide column mid-purple">
-				<div class="my-column">
-					<h3 class="project-h">Fencing Branding</h3>
-					<p class="projects">For The Fencing Knights at UCF, I created <b>social media graphics</b> & designed their t-shirt for the 2nd annual Black & Gold competition using <b>Photoshop</b>.</p>
-					<a href="docs/fencing-branding.pdf" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
-				</div>
-			</div>
-		</div-->
-
-		<!-- <div class="ui stackable three column grid">
-			<div class="column">
-				<div class="my-column">
-					<h3 id="project-h">Magical Girl</h3>
-					<p class="projects">I combined knowledge from creative writing and <b>web design</b> to write a media
-					analysis of the "magical girl" subgenre & customize a site using <b>Materialize CSS</b>’s grid & components.</p>
-					<a href="https://magical-girl.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
-				</div>
-			</div>
-			<div class="column mid-purple">
-				<div class="my-column">
-					<h3 class="project-h">Eventcrunch</h3>
-					<p class="projects">I worked on a small team to create a mashup of <b>BandsInTown & Google Maps API</b> for a UCF course. I coded <b>JS, PHP & SQL</b> to validate & store user info in login, registration & profile forms.</p>
-					<a href="https://event-crunch.herokuapp.com" target="_blank" rel="noopener noreferrer"><button class="massive ui inverted button">See Project</button></a>
-				</div>
-			</div>
-			<div class="dark-purple column">
-				<div id="weather-proj" class="my-column">
-					<h3>Change the Weather</h3>
-					<p class="projects">In order to better understand <b>CSS animations</b>, I designed a fun, weather-themed side project.</p>
-					<a href="css-animations/sun.html"><button class="massive ui inverted button">See Project</button></a>
-				</div>
-			</div>
-		</div> -->
 	
 		<div class="ui footer grid">
 			<div class="ui centered row">
 				<div class="my-info-column">
-					<!-- <div class="ui centered column"> -->
-						<button id="button-email" class="ui huge inverted icon button">
-							<a href="mailto:thaliawithath@gmail.com?Subject=Portfolio%20Query" rel="noopener noreferrer"><i id="email" class="large envelope icon"></i><span class="sr-only">Email</span></a>
-						</button>
-						<button id="button-github" class="ui huge inverted icon button">
-							<a href="https://github.com/thaliasu" target="_blank" rel="noopener noreferrer"><i id="github" class="large github square icon"></i><span class="sr-only">GitHub</span></a>
-						</button>
-						<button class="ui huge inverted icon button">
-							<a href="https://linkedin.com/in/thalia-su" target="_blank" rel="noopener noreferrer"><i id="linkedin" class="large linkedin icon"></i><span class="sr-only">LinkedIn</span></a>
-						</button>
-					<!-- </div> -->
+					<button id="button-email" class="ui huge inverted icon button">
+						<a href="mailto:thaliawithath@gmail.com?Subject=Portfolio%20Query" rel="noopener noreferrer"><i id="email" class="large envelope icon"></i><span class="sr-only">Email</span></a>
+					</button>
+					<button id="button-github" class="ui huge inverted icon button">
+						<a href="https://github.com/thaliasu" target="_blank" rel="noopener noreferrer"><i id="github" class="large github square icon"></i><span class="sr-only">GitHub</span></a>
+					</button>
+					<button class="ui huge inverted icon button">
+						<a href="https://linkedin.com/in/thalia-su" target="_blank" rel="noopener noreferrer"><i id="linkedin" class="large linkedin icon"></i><span class="sr-only">LinkedIn</span></a>
+					</button>
 				</div>
 			</div>
-			<div class="ui centered row">
-				<p id="copyright">Thalia Su Portfolio 2022 &#169</p>
+			<div class="ui centered row copyright">
+				<p>Thalia Su Portfolio 2022 &#169</p>
 			</div>
 		</div>
 	</main><!--END PORTFOLIO-->
