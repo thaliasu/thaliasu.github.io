@@ -33,7 +33,14 @@
 			<ul id="nav-list" role="menubar">
 				<li role="menuitem" id="0" class="active"><a id="welcome-link" class="nav-link">Welcome</a></li>
 				<li role="menuitem" id="1"><a class="nav-link" href="#main">About</a></li>
-				<li role="menuitem" id="2"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+				<li role="menuitem" id="2" class="has-submenu">
+					<!-- <li role="menuitem" id="2" class="has-submenu"> -->
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+					<!-- <ul id="nav-dropdown">
+						<li><a href="#">VIDAA</a></li>
+						<li><a href="#">IMITATE</a></li>
+					</ul> -->
+				</li>
 				<li role="menuitem" class="nav-link"><span id="download-resume"><a href="docs/thalia-resume-2022.pdf" target="_blank" rel="noopener noreferrer">Resume</a></span></li>
 			</ul>
 		</nav>
@@ -90,7 +97,6 @@
 			<div class="dark-purple ten wide column">
 				<div class="my-column">
 					<h3>Experience</h3>
-					<h4>Work</h4>
 					<div class="ui accordion">
 						<!-- <div id="experience"> -->
 							<div class="title">
@@ -221,14 +227,14 @@
 			</div>
 			<div class="half-spacing"></div>
 			<div class="row">
-				<div class="column"> <!--Add .media-wrapper if 2 links-->
+				<div class="middle aligned column"> <!--Add .media-wrapper if 2 links-->
 					<h3>IMITATE</h3>
 					<p class="project-text">As the primary UI/UX Designer for the Performance Augmentation team at Design Interactive, I worked extensively on IMITATE, a web app that promotes effective skill acquisition.</p>
 					<a href="/imitate-ux.html"><button id="button-imi-ux" class="massive ui inverted button">See Case Study</button></a>
 					<!-- <a href="/imitate-gd.html"><button class="massive ui inverted button">See Graphic Design</button></a> -->
 				</div>
-				<div class="column">
-					<img id="di-pic" class="portfolio-pic" src="imgs/di-mock.png" alt="iPad displaying user interface of user profile for IMITATE."/>
+				<div class="middle aligned centered aligned column">
+					<img id="di-pic" class="portfolio-pic" src="imgs/mockup-ipad-imi.gif" alt="iPad displaying user adding behavior to rating system."/>
 				</div>
 			</div>
 		</div>
