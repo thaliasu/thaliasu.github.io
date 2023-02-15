@@ -539,6 +539,23 @@ nav.mobileIsActive #x-icon {
   margin-right: 1rem;
 }
 
+.graphic-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .graphic-wrapper {
+    padding-top: 1.75rem;
+  }
+}
+
 /*END PORTFOLIO*/
 /*MORE INFO*/
 .footer .ui.button {
