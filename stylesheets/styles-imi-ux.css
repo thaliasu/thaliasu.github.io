@@ -47,6 +47,11 @@ body {
 }
 
 /*other page formatting*/
+.ui.relaxed.grid > .column:not(.row), .ui.relaxed.grid > .row > .column, .ui.grid > .relaxed.row > .column {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .imi-title {
   text-align: center;
 }
