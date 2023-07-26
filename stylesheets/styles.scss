@@ -566,9 +566,9 @@ nav.mobileIsActive {
 
 /*MORE INFO*/
 .footer {
-	// background-color: $light-purple;
 	// margin-bottom: 1rem !important;
 	padding: 0 !important;
+	background-color: $pink;
 
 	.ui.button {
 		// padding: 0.78571429em !important;
@@ -576,7 +576,7 @@ nav.mobileIsActive {
 
 		&:hover {
 			#email, #linkedin, #github {
-				color: $dark-purple !important;
+				color: $pink !important;
 			}
 		}
 	}
@@ -584,10 +584,10 @@ nav.mobileIsActive {
 	.icon {
 		margin: 0 !important;
 	}
+}
 
-	.copyright {
-		background-color: $pink;
-	}
+#social-wrapper {
+	padding-bottom: 0;
 }
 
 #button-email {

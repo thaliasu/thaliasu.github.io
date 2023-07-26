@@ -481,18 +481,20 @@ nav.mobileIsActive #x-icon {
 /*MORE INFO*/
 .footer {
   padding: 0 !important;
+  background-color: #F63970;
 }
 .footer .ui.button {
   font-family: Montserrat, sans-serif !important;
 }
 .footer .ui.button:hover #email, .footer .ui.button:hover #linkedin, .footer .ui.button:hover #github {
-  color: #310F31 !important;
+  color: #F63970 !important;
 }
 .footer .icon {
   margin: 0 !important;
 }
-.footer .copyright {
-  background-color: #F63970;
+
+#social-wrapper {
+  padding-bottom: 0;
 }
 
 #button-email {
