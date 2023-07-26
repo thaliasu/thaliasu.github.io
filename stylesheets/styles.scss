@@ -37,11 +37,11 @@ a {
 }
 
 h1 {
-	font-family: 'jaapokki', 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 6rem;
 	text-transform: uppercase;
 	margin-bottom: 0;
-	letter-spacing: .5rem;
+	// letter-spacing: .5rem;
 	text-align: center;
 }
 
@@ -315,6 +315,7 @@ nav.mobileIsActive {
 
 #download-resume {
 	border: 2px solid #FFF;
+	border-radius:0.28571429rem;
 	background-color: transparent;
 	transition: background-color .25s ease-in-out;
 	display: inherit;
