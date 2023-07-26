@@ -1,13 +1,12 @@
 /*GLOBAL*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 // @font-face {
 // 	font-family: jaapokki;
 // 	src: url(../font/Jaapokkisubtract-Regular.otf);
 // }
 
-$hover-purple: #E4CEE4;
+// $hover-purple: #E4CEE4;
 $light-purple: #9A5FAB;
 $mid-purple: #5C3666;
 $dark-purple: #310F31;
@@ -37,15 +36,13 @@ a {
 	}
 }
 
-h1, h2 {
-	font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-
 h1 {
-	// font-family: 'jaapokki', 'Montserrat', sans-serif;
+	font-family: 'jaapokki', 'Montserrat', sans-serif;
 	font-size: 6rem;
 	text-transform: uppercase;
 	margin-bottom: 0;
+	letter-spacing: .5rem;
+	text-align: center;
 }
 
 #home-h1 {
@@ -56,11 +53,16 @@ h1 {
 }
 
 h2 {
-	// font-family: 'jaapokki', 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 4.5rem;
 	text-transform: uppercase;
 	margin-bottom: 0;
 	font-weight: 900;
+	// letter-spacing: .4rem;
+}
+
+#home-h2 {
+	text-align: center;
 }
 
 h3 {
@@ -199,7 +201,7 @@ nav {
 			}
 	
 			&:hover {
-				color:$hover-purple;
+				// color:$hover-purple;
 				
 				&:after {
 				  width: 100%;

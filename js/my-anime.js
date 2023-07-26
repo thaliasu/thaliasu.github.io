@@ -1,6 +1,3 @@
-// var path = document.querySelector('path');
-// var length = path.getTotalLength();
-
 anime.timeline({
   easing: 'easeOutExpo',
 })
