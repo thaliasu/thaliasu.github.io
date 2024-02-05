@@ -570,13 +570,14 @@ nav.mobileIsActive {
 	// margin-bottom: 1rem !important;
 	padding: 0 !important;
 	background-color: $pink;
+	// color: $pink;
 
 	.ui.button {
 		// padding: 0.78571429em !important;
 		font-family: Montserrat, sans-serif !important;
 
 		&:hover {
-			#email, #linkedin, #github {
+			i {
 				color: $pink !important;
 			}
 		}

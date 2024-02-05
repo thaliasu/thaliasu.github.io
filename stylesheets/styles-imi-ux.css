@@ -1,11 +1,41 @@
-/*png formatting*/
+/*page formatting*/
 body {
   background-image: url("/imgs/imitate/background.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
 
+.imi-title {
+  text-align: center;
+}
+
+.section-wrapper-intro {
+  background: #5C3666;
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.section-wrapper-brainstorming {
+  border-radius: 20px;
+  border: 4px solid #FFF;
+}
+
+.section-wrapper-hifid {
+  background: #5C3666;
+  border-radius: 20px;
+}
+
+.ui.grid > * {
+  padding: 2rem;
+}
+
+/*footer*/
+#icon-top {
+  opacity: 1;
+}
+
+/*image formatting*/
 #mockup-imi, #rs-old, #rs-old-mobile, .tree, #rs-new {
   width: 50%;
   margin-left: auto;
@@ -31,49 +61,24 @@ body {
 }
 
 .tree-third {
-  padding: 0 1rem 1rem 1rem;
   width: 27%;
-  height: -moz-max-content;
-  height: max-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media screen and (max-width: 767px) {
   .tree-third {
     width: 100%;
-    padding-top: 1rem;
   }
 }
 
-/*other page formatting*/
-.ui.relaxed.grid > .column:not(.row), .ui.relaxed.grid > .row > .column, .ui.grid > .relaxed.row > .column {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
-.imi-title {
-  text-align: center;
-}
-
-.section-wrapper-intro {
-  background: #5C3666;
-  margin-top: 1.5rem;
-  padding: 2rem;
-  border-radius: 20px;
-}
-
-.section-wrapper-progress {
-  background: #9A5FAB;
-  border-radius: 20px;
-  border: 4px solid #5C3666;
-  margin: 1.5rem 6rem;
+#walkthru-imi {
+  width: 50%;
 }
 @media screen and (max-width: 767px) {
-  .section-wrapper-progress {
-    margin: 1.5rem;
+  #walkthru-imi {
+    width: 100%;
+    margin-bottom: 1rem;
   }
-}
-
-.ui.grid > * {
-  padding: 2rem;
 }
 
 .ui.label {
@@ -87,20 +92,17 @@ figure {
 
 figcaption {
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 767px) {
+  figcaption {
+    padding-top: 0;
+  }
 }
 
 desc {
   position: absolute;
   top: -9999px;
   left: -9999px;
-}
-
-#walkthru-imi {
-  width: 50%;
-}
-@media screen and (max-width: 767px) {
-  #walkthru-imi {
-    width: 100%;
-  }
 }/*# sourceMappingURL=styles-imi-ux.css.map */

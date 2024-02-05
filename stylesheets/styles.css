@@ -486,7 +486,7 @@ nav.mobileIsActive #x-icon {
 .footer .ui.button {
   font-family: Montserrat, sans-serif !important;
 }
-.footer .ui.button:hover #email, .footer .ui.button:hover #linkedin, .footer .ui.button:hover #github {
+.footer .ui.button:hover i {
   color: #F63970 !important;
 }
 .footer .icon {

@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="stylesheets/styles-imi-ux.css">
 	<link rel="icon" href="imgs/favicon.png" type="image/x-icon">
 
-	<!-- <script
+	<script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous"></script> -->
-	<script src="semantic-ui/semantic.min.js"></script>
+	  crossorigin="anonymous"></script>
+	<!-- <script src="semantic-ui/semantic.min.js"></script> -->
 </head>
 <body>
     <main>
@@ -30,13 +30,15 @@
         </div>
         
         <div class="ui stackable relaxed grid">
-            <div class="row">
-                <div class="column">
+            <div class="sixteen wide column">
+                <div class="row">
                     <h1 class="imi-title">IMITATE UX</h1>
                     <div class="media-wrapper">
                         <img id="mockup-imi" src="/imgs/imitate/mockup-imi.png" alt="IMITATE on iPad">
                     </div>
-    
+                </div>
+                
+                <div class="row">
                     <div class="section-wrapper-intro">
                         <h2>Intro</h2>
                         <p>IMITATE is a video-based mobile communication platform that accelerates acquisition of skills like public speaking, sales and interpersonal communication.
@@ -87,14 +89,16 @@
                             Desktop
                         </div>
                     </div> <!--End of section wrapper-->
-                </div> <!--End of column-->
-            </div> <!--End of row-->
+                </div> <!--End of row-->
+            </div> <!--End of column-->
+        <!-- </div>  -->
+        <!-- End of grid -->
             
-            <div class="section-wrapper-progress">
-                <div class="row">
-                    <div class="sixteen wide column">
-                        <h2 id="h2-authoring">Process</h2>
-                        <h3>Background</h3>
+        <!-- <div class="ui grid"> -->
+            <!-- <div class="section-wrapper-progress"> -->
+                <div class="sixteen wide column">
+                    <div class="row">
+                        <h2>Background</h2>
                         <p>KPAs are a criteria with multiple characteristics (behaviors), which can be rated on a scale of 1-5.</p>
                     </div>
 
@@ -119,38 +123,42 @@
                             </figure>
                         </div>
                     </div>
-                    
-                    <div class="sixteen wide column">
-                        <h3>Brainstorming</h3>
-                        <p>IMITATE already had a well-deﬁned style that I could work from. I reused components like buttons and cards for the Manage Rating Systems list.
-                            The original design I inherited came with a card (left side) and form (right side).
-                        </p>
-                        <div class="media-wrapper">
-                            <img id="rs-old" src="/imgs/imitate/rs-old.png" alt="keyword tree on left with place to type input on right">
-                            <img id="rs-old-mobile" src="/imgs/imitate/rs-old-mobile.png" alt="keyword tree on left with place to type input on right">
+                </div>
+
+                <div class="section-wrapper-brainstorming">
+                    <div class="row">
+                        <div class="sixteen wide column">
+                            <h2>Brainstorming</h2>
+                            <div class="media-wrapper">
+                                <img id="rs-old" src="/imgs/imitate/rs-old.png" alt="keyword tree on left with place to type input on right">
+                                <img id="rs-old-mobile" src="/imgs/imitate/rs-old-mobile.png" alt="keyword tree on left with place to type input on right">
+                            </div>
+                            <p>IMITATE already had a well-deﬁned style that I could work from. I reused components like buttons and cards for the Manage Rating Systems list.
+                                The original design I inherited came with a card (left side) and form (right side).
+                            </p><br>
+                            <h3>Proposed Changes</h3>
                         </div>
-        
-                        <p>Changes I wanted to make:</p>
                     </div>
-                    
-                    <div class="eight wide stackable column">
-                        <p>
-                            1.) Add a database drawing definitions from existing rating systems so the user wouldn't have to create KPAs/behaviors/anchors from scratch every time.<br><br>
-                            2.) Be able to interact directly with card because affordance implied it was interactive. At the time, users could only select a KPA or behavior rectangle but not type into it.
-                        </p>
-                    </div>
-                    
-                    <div class="eight wide stackable column">
-                        <p>
-                            3.) Allow autocomplete when typing into the card. Have database results adapt as user was typing into form.<br><br>
-                            4.) Make form collapsible so space could be freed up.
-                        </p>
-                    </div>   
-                </div> <!--End of row-->
+                    <div class="row">
+                        <div class="eight wide stackable column">
+                            <p>
+                                1.) Add a database drawing definitions from existing rating systems so the user wouldn't have to create KPAs/behaviors/anchors from scratch every time.<br>
+                                2.) Be able to interact directly with card because affordance implied it was interactive. At the time, users could only select a KPA or behavior rectangle but not type into it.
+                            </p>
+                        </div>
                         
+                        <div class="eight wide stackable column">
+                            <p>
+                                3.) Allow autocomplete when typing into the card. Have database results adapt as user was typing into form.<br>
+                                4.) Make form collapsible so space could be freed up.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="row">
                     <div class="sixteen wide column">
-                        <h3>Roadblock</h3>
+                        <h2>Roadblock</h2>
                         <figure>
                             <div class="media-wrapper">
                                 <img class="tree-third" src="/imgs/imitate/tree-default.png" alt="">
@@ -172,15 +180,21 @@
                     </div>
                 </div>
                     
-                <div class="row">
-                    <div class="column">
-                        <h3>Hi-Fidelity Prototype</h3>
-                        <div class="media-wrapper">
-                            <!--Add captions-->
-                            <video id="walkthru-imi" src="/imgs/imitate/walkthru-imi.mp4" controls>Your browser does not support the video tag.</video>
+                <div class="section-wrapper-hifid">
+                    <div class="row">
+                        <div class="sixteen wide column">
+                            <h2>Hi-Fidelity Prototype</h2>
+                            <div class="media-wrapper">
+                                <!--Add captions-->
+                                <video id="walkthru-imi" src="/imgs/imitate/walkthru-imi.mp4" controls>Your browser does not support the video tag.</video>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
-                        <h3>Lessons Learned</h3>
+                <div class="row">
+                    <div class="sixteen wide column">
+                        <h2>Lessons Learned</h2>
                         <p>Include developers early in the design process. Learning what is technically feasible prevents the team from wasting time. 
                             Thanks to some feedback from the Marines who used the BETA, we added the ability to add an existing KPA and its attached set of behaviors in one click (seen below).</p>
                         <div class="media-wrapper">
@@ -188,15 +202,19 @@
                         </div>
                     </div>
                 </div>
-            </div> <!--End of section wrapper-->
+                
+            <!-- </div>  -->
+            <!--End of section wrapper-->
+            
         </div> <!--End of grid-->
 
         <!--Could make footer less redundant with php-->
         <div class="ui footer grid">
-            <div class="ui centered row copyright">
-                <p>Thalia Su Portfolio 2022 &#169</p>
+            <div class="ui centered row">
+                <button id="button-top" class="ui inverted button">Back to Top<span #icon-top><i class="angle up icon"></i></span></button>
             </div>
         </div>
     </main>
+    <script src="js/function-imi.js"></script>
 </body>
 </html>
